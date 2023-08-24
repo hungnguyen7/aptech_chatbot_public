@@ -1,0 +1,122 @@
+version: "2.0"
+rules:
+- rule: chào hỏi
+  steps:
+  - intent: greet
+  - action: utter_greet
+- rule: tạm biệt
+  steps:
+  - intent: bye
+  - action: utter_bye
+- rule: số lượng tuyến sinh
+  steps:
+  - intent: so_luong_tuyen_sinh
+  - action: utter_so_luong_tuyen_sinh
+- rule: đăng kí xét tuyển
+  steps:
+  - intent: dang_ky_xet_tuyen
+  - action: utter_dang_ky_xet_tuyen
+- rule: điều kiện tuyển sinh chuyển quốc tế
+  steps:
+  - intent: dieu_kien_tuyen_sinh_chuan_quoc_te
+  - action: utter_dieu_kien_tuyen_sinh_chuan_quoc_te
+- rule: chương trình học
+  steps:
+  - intent: chuong_trinh_hoc
+  - action: utter_chuong_trinh_hoc
+- rule: đối tượng tuyển sinh
+  steps:
+  - intent: doi_tuong_tuyen_sinh
+  - action: utter_doi_tuong_tuyen_sinh
+- rule: khả năng toán học
+  steps:
+  - intent: kha_nang_toan_hoc
+  - action: utter_kha_nang_toan_hoc
+- rule: khả năng vẽ
+  steps:
+  - intent: kha_nang_ve
+  - action: utter_kha_nang_ve
+- rule: giới thiệu các khóa học
+  steps:
+  - intent: gioi_thieu_khoa_hoc
+  - action: custom_action_gioi_thieu_khoa_hoc
+- rule: cơ sở vật chất tại đại học cần thơ
+  steps:
+  - intent: dai_hoc_can_tho
+  - action: utter_dai_hoc_can_tho
+- rule: có cần máy tính không
+  steps:
+  - intent: may_tinh
+  - action: utter_may_tinh
+- rule: chất lương phòng học
+  steps:
+  - intent: phong_hoc
+  - action: utter_phong_hoc
+- rule: phong trảo
+  steps:
+  - intent: phong_trao
+  - action: utter_phong_trao
+- rule: bằng cấp quốc tế
+  steps:
+  - intent: bang_cap_quoc_te
+  - action: utter_bang_cap_quoc_te
+- rule: bằng cấp chuyên gia trí tuệ nhân tạo
+  steps:
+  - intent: acn_pro
+  - action: utter_acn_pro
+- rule: liên thông các khóa học
+  steps:
+  - intent: lien_thong_khoa_hoc
+  - action: custom_action_lien_thong_khoa_hoc
+- rule: cơ hội việc làm
+  steps:
+  - intent: co_hoi_viec_lam
+  - action: custom_action_co_hoi_viec_lam
+- rule: điều kiện xét tuyển và đăng kí đại học và cao đẳng CNTT
+  steps:
+  - intent: dang_ki_cao_dang_dai_hoc_cntt
+  - action: custom_action_dang_ki_cao_dang_dai_hoc_cntt
+- rule: hình thức học
+  steps:
+  - intent: hinh_thuc_hoc
+  - action: utter_hinh_thuc_hoc
+- rule: học phí các khóa học
+  steps:
+  - intent: hoc_phi
+  - action: custom_action_hoc_phi
+- rule: lịch học các khoá học
+  steps:
+  - intent: thoi_gian_khoa_hoc
+  - action: custom_action_lich_hoc
+- rule: hệ đào tạo vừa học vừa làm
+  steps:
+  - intent: he_vua_hoc_vua_lam
+  - action: utter_he_vua_hoc_vua_lam
+- rule: đối tác tuyển dụng
+  steps:
+  - intent: nha_tuyen_dung_doi_tac
+  - action: utter_nha_tuyen_dung_doi_tac
+- rule: multi intent thời gian học và học phí
+  steps:
+  - intent: thoi_gian_khoa_hoc+hoc_phi
+  - action: custom_action_lich_hoc
+  - action: custom_action_hoc_phi
+- rule: multi intent giới thiệu khóa học và học phí
+  steps:
+  - intent: gioi_thieu_khoa_hoc+hoc_phi
+  - action: custom_action_gioi_thieu_khoa_hoc
+  - action: custom_action_hoc_phi
+- rule: multi intent giới thiệu khóa học, học phí và lịch học
+  steps:
+  - intent: gioi_thieu_khoa_hoc+hoc_phi+thoi_gian_khoa_hoc
+  - action: custom_action_gioi_thieu_khoa_hoc
+  - action: custom_action_hoc_phi
+  - action: custom_action_lich_hoc
+- rule: ngoài phạm vi có thể xử lí
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase

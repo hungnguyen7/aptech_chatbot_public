@@ -1,0 +1,24 @@
+khoá học,Utter giới thiệu,Utter liiên thông,Utter việc làm,"Loại (1: dài hạn, 0: ngắn hạn, 2: đặc biệt)",Một số utter đặc biệt
+Lập trình viên quốc tế,utter_lap_trinh_vien_quoc_te,utter_lien_thong_lap_trinh_vien_quoc_te,utter_viec_lam_lap_trinh_vien,1,
+Mỹ thuật đa phương tiện,utter_my_thuat_da_phuong_tien,utter_lien_thong_my_thuat_da_phuong_tien,utter_viec_lam_my_thuat_da_phuong_tien,1,
+Chuyên gia trí tuệ nhân tạo và máy học,utter_tri_tue_nhan_tao,,utter_viec_lam_tri_tue_nhan_tao,1,
+An ninh thông tin,utter_an_toan_an_ninh_thong_tin,,utter_viec_lam_lap_trinh_vien,0,
+Quản trị mạng doanh nghiệp,utter_quan_tri_mang_doanh_nghiep,,utter_viec_lam_lap_trinh_vien,0,
+Thiết kế và cài đặt mạng,utter_thiet_ke_va_cai_dat_mang,,utter_viec_lam_lap_trinh_vien,0,
+Bảo mật ứng dụng web,utter_bao_mat_ung_dung_web,,utter_viec_lam_lap_trinh_vien,0,
+Điều tra tội phạm máy tính,utter_dieu_tra_toi_pham_may_tinh,,utter_viec_lam_lap_trinh_vien,0,
+Phát triển ứng dụng web với php và mysql,utter_dung_web_voi_php_mysql,,utter_viec_lam_lap_trinh_vien,0,
+Phát triển ứng dụng web với laravel và angularjs,utter_ung_dung_web_voi_laravel,,utter_viec_lam_lap_trinh_vien,0,
+Phát triển ứng dụng web với java ee,utter_ung_dung_web_java_ee,,utter_viec_lam_lap_trinh_vien,0,
+Lập trình c# căn bản,utter_lap_trinh_c#_can_ban,,utter_viec_lam_lap_trinh_vien,0,
+lập trình java căn bản,utter_lap_trinh_java_can_ban,,utter_viec_lam_lap_trinh_vien,0,
+phát triển ứng dụng android,utter_phat_trien_ung_dung_android,,utter_viec_lam_lap_trinh_vien,0,
+An toàn và bảo mật thông tin cá nhân,utter_an_toan_va_bao_mat_thong_tin_ca_nhan,,utter_viec_lam_lap_trinh_vien,0,
+phát triển ứng dụng ios,utter_phat_trien_ung_dung_ios,,utter_viec_lam_lap_trinh_vien,0,
+thiết kế và quản trị website với wordpress,utter_ung_dung_web_wordpress,,utter_viec_lam_lap_trinh_vien,0,
+kiểm thử phần mềm,utter_kiem_thu_phan_mem,,utter_viec_lam_lap_trinh_vien,0,
+lập trình ardruino cơ bản,utter_lap_trinh_arduino_can_ban,,utter_viec_lam_lap_trinh_vien,0,
+phát triển ứng dụng web với asp.net mvc,utter_ung_dung_web_asp_mvc,,utter_viec_lam_lap_trinh_vien,0,
+đại học công nghệ thông tin,utter_dai_hoc_cntt,,utter_viec_lam_lap_trinh_vien,2,utter_hoc_phi_dai_hoc_cntt
+cao đẳng công nghệ thông tin,utter_cao_dang_cntt,,utter_viec_lam_lap_trinh_vien,2,uter_hoc_phi_cao_dang_cntt
+cao đẳng thiết kế đồ họa,utter_thiet_ke_do_hoa,,utter_viec_lam_my_thuat_da_phuong_tien,2,utter_hoc_phi_cao_dang_thiet_ke_do_hoa

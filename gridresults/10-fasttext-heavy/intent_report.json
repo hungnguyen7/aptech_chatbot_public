@@ -1,0 +1,82 @@
+{
+  "dang_ky_xet_tuyen": {
+    "precision": 0.9090909090909091,
+    "recall": 1.0,
+    "f1-score": 0.9523809523809523,
+    "support": 10,
+    "confused_with": {}
+  },
+  "kha_nang_ve": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 10,
+    "confused_with": {}
+  },
+  "thoi_gian_khoa_hoc": {
+    "precision": 1.0,
+    "recall": 0.9473684210526315,
+    "f1-score": 0.972972972972973,
+    "support": 19,
+    "confused_with": {
+      "gioi_thieu_khoa_hoc": 1
+    }
+  },
+  "co_hoi_viec_lam": {
+    "precision": 0.9583333333333334,
+    "recall": 0.8846153846153846,
+    "f1-score": 0.9199999999999999,
+    "support": 26,
+    "confused_with": {
+      "gioi_thieu_khoa_hoc": 3
+    }
+  },
+  "hoc_phi": {
+    "precision": 1.0,
+    "recall": 0.9615384615384616,
+    "f1-score": 0.9803921568627451,
+    "support": 26,
+    "confused_with": {
+      "gioi_thieu_khoa_hoc": 1
+    }
+  },
+  "chuong_trinh_hoc": {
+    "precision": 0.8333333333333334,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.8333333333333334,
+    "support": 12,
+    "confused_with": {
+      "gioi_thieu_khoa_hoc": 2
+    }
+  },
+  "gioi_thieu_khoa_hoc": {
+    "precision": 0.9204545454545454,
+    "recall": 0.9529411764705882,
+    "f1-score": 0.9364161849710982,
+    "support": 85,
+    "confused_with": {
+      "chuong_trinh_hoc": 2,
+      "dang_ky_xet_tuyen": 1
+    }
+  },
+  "lien_thong_khoa_hoc": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 17,
+    "confused_with": {}
+  },
+  "accuracy": 0.9463414634146341,
+  "macro avg": {
+    "precision": 0.9526515151515151,
+    "recall": 0.9474745971262999,
+    "f1-score": 0.9494369500651377,
+    "support": 205
+  },
+  "weighted avg": {
+    "precision": 0.9475424981522542,
+    "recall": 0.9463414634146341,
+    "f1-score": 0.9464188673720524,
+    "support": 205
+  }
+}

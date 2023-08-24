@@ -1,0 +1,7 @@
+bpe-light:68s
+bpe-heavy:114s
+fasttext-light:70s
+fasttext-heavy:120s
+phobert-light:78s
+phobert-heavy:126s
+default:62s

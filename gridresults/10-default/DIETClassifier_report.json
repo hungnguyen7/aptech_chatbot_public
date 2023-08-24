@@ -1,0 +1,27 @@
+{
+  "khoa_hoc": {
+    "precision": 0.8940269749518305,
+    "recall": 0.945010183299389,
+    "f1-score": 0.9188118811881189,
+    "support": 491,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.8940269749518305,
+    "recall": 0.945010183299389,
+    "f1-score": 0.9188118811881189,
+    "support": 491
+  },
+  "macro avg": {
+    "precision": 0.8940269749518305,
+    "recall": 0.945010183299389,
+    "f1-score": 0.9188118811881189,
+    "support": 491
+  },
+  "weighted avg": {
+    "precision": 0.8940269749518305,
+    "recall": 0.945010183299389,
+    "f1-score": 0.9188118811881189,
+    "support": 491
+  }
+}

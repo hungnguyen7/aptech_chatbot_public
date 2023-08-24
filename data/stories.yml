@@ -1,0 +1,179 @@
+version: "2.0"
+stories:
+- story: cơ sở vất chất và dịch vụ
+  steps:
+  - checkpoint: co_so_vat_chat
+  - intent: dai_hoc_can_tho
+  - action: utter_dai_hoc_can_tho
+  - intent: may_tinh
+  - action: utter_may_tinh
+  - intent: phong_hoc
+  - action: utter_phong_hoc
+  - intent: phong_trao
+  - action: utter_phong_trao
+- story: tư vấn chung
+  steps:
+  - intent: chuong_trinh_hoc
+  - action: utter_chuong_trinh_hoc
+  - intent: dang_ki_cao_dang_dai_hoc_cntt
+  - action: custom_action_dang_ki_cao_dang_dai_hoc_cntt
+  - intent: hinh_thuc_hoc
+  - action: utter_hinh_thuc_hoc
+  - intent: doi_tuong_tuyen_sinh
+  - action: utter_doi_tuong_tuyen_sinh
+  - intent: so_luong_tuyen_sinh
+  - action: utter_so_luong_tuyen_sinh
+  - intent: dang_ky_xet_tuyen
+  - action: utter_dang_ky_xet_tuyen
+  - checkpoint: tu_van_chung
+- story: học phí và thời gian
+  steps:
+  - checkpoint: hoc_phi_va_thoi_gian
+  - intent: hoc_phi
+  - action: custom_action_hoc_phi
+  - intent: thoi_gian_khoa_hoc
+  - action: custom_action_lich_hoc
+- story: tư vấn khoá học 1
+  steps:
+  - checkpoint: tu_van_chung
+  - intent: gioi_thieu_khoa_hoc
+  - action: custom_action_gioi_thieu_khoa_hoc
+  - intent: kha_nang_toan_hoc
+  - action: utter_kha_nang_toan_hoc
+  - intent: bang_cap_quoc_te
+  - action: utter_bang_cap_quoc_te
+  - checkpoint: co_so_vat_chat
+- story: tư vấn khoá học 2
+  steps:
+  - checkpoint: tu_van_chung
+  - intent: gioi_thieu_khoa_hoc
+  - action: custom_action_gioi_thieu_khoa_hoc
+  - intent: kha_nang_toan_hoc
+  - action: utter_kha_nang_toan_hoc
+  - intent: bang_cap_quoc_te
+  - action: utter_bang_cap_quoc_te
+  - checkpoint: hoc_phi_va_thoi_gian
+- story: tư vấn khoá học 3
+  steps:
+  - checkpoint: hoc_phi_va_thoi_gian
+  - checkpoint: co_so_vat_chat
+  - intent: lien_thong_khoa_hoc
+  - action: custom_action_lien_thong_khoa_hoc
+  - intent: co_hoi_viec_lam
+  - action: custom_action_co_hoi_viec_lam
+- story: tư vấn khóa học 4
+  steps:
+  - checkpoint: tu_van_chung
+  - intent: gioi_thieu_khoa_hoc
+  - action: custom_action_gioi_thieu_khoa_hoc
+  - intent: kha_nang_ve
+  - action: utter_kha_nang_ve
+  - intent: bang_cap_quoc_te
+  - action: utter_bang_cap_quoc_te
+  - checkpoint: co_so_vat_chat
+- story: Story from Conversation ID 53391bf27dcd4da2a2b03388ddd864ce
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: gioi_thieu_khoa_hoc
+    entities:
+    - khoa_hoc: lập trình viên quốc tế
+  - slot_was_set:
+    - khoa_hoc: lập trình viên quốc tế
+  - action: custom_action_gioi_thieu_khoa_hoc
+  - intent: hoc_phi
+  - action: custom_action_hoc_phi
+  - intent: thoi_gian_khoa_hoc
+  - action: custom_action_lich_hoc
+  - intent: lien_thong_khoa_hoc
+  - action: custom_action_lien_thong_khoa_hoc
+  - intent: may_tinh
+  - action: utter_may_tinh
+  - intent: bang_cap_quoc_te
+  - action: utter_bang_cap_quoc_te
+  - intent: phong_trao
+  - action: utter_phong_trao
+  - intent: kha_nang_toan_hoc
+  - action: utter_kha_nang_toan_hoc
+  - intent: gioi_thieu_khoa_hoc
+    entities:
+    - khoa_hoc: chuyên gia trí tuệ nhân tạo và máy học
+  - slot_was_set:
+    - khoa_hoc: chuyên gia trí tuệ nhân tạo và máy học
+  - action: custom_action_gioi_thieu_khoa_hoc
+  - intent: hoc_phi
+  - action: custom_action_hoc_phi
+  - intent: co_hoi_viec_lam
+  - action: custom_action_co_hoi_viec_lam
+  - intent: nha_tuyen_dung_doi_tac
+  - action: utter_nha_tuyen_dung_doi_tac
+- story: Story from Conversation ID 9a88c99d0ec444e8a170553b2f3a9ed5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chuong_trinh_hoc
+  - action: utter_chuong_trinh_hoc
+  - intent: hinh_thuc_hoc
+  - action: utter_hinh_thuc_hoc
+  - intent: gioi_thieu_khoa_hoc
+    entities:
+    - khoa_hoc: mỹ thuật đa phương tiện
+  - slot_was_set:
+    - khoa_hoc: mỹ thuật đa phương tiện
+  - action: custom_action_gioi_thieu_khoa_hoc
+  - intent: kha_nang_ve
+  - action: utter_kha_nang_ve
+  - intent: thoi_gian_khoa_hoc+hoc_phi
+  - action: custom_action_lich_hoc
+  - action: custom_action_hoc_phi
+  - intent: bye
+  - action: utter_bye
+- story: Story from Conversation ID 52588d56ccdc491d9b053203316baf3e
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: dang_ky_xet_tuyen
+    entities:
+    - khoa_hoc: mỹ thuật đa phương tiện
+  - slot_was_set:
+    - khoa_hoc: mỹ thuật đa phương tiện
+  - action: utter_dang_ky_xet_tuyen
+  - intent: gioi_thieu_khoa_hoc
+    entities:
+    - khoa_hoc: Mỹ thuật đa phương
+    - khoa_hoc: tiện
+  - slot_was_set:
+    - khoa_hoc: tiện
+  - action: custom_action_gioi_thieu_khoa_hoc
+  - intent: kha_nang_ve
+  - action: utter_kha_nang_ve
+  - intent: thoi_gian_khoa_hoc+hoc_phi
+  - action: custom_action_lich_hoc
+  - action: custom_action_hoc_phi
+  - intent: may_tinh
+  - action: utter_may_tinh
+  - intent: lien_thong_khoa_hoc
+  - action: custom_action_lien_thong_khoa_hoc
+- story: Story from Conversation ID dfc3df1ff03f4022b558e704ad70815e
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: gioi_thieu_khoa_hoc
+    entities:
+    - khoa_hoc: mỹ thuật đa phương tiện
+  - slot_was_set:
+    - khoa_hoc: mỹ thuật đa phương tiện
+  - action: custom_action_gioi_thieu_khoa_hoc
+  - intent: thoi_gian_khoa_hoc+hoc_phi
+  - action: custom_action_lich_hoc
+  - action: custom_action_hoc_phi
+  - slot_was_set:
+    - khoa_hoc: mỹ thuật đa phương tiện
+  - intent: may_tinh
+  - action: utter_may_tinh
+  - intent: dai_hoc_can_tho
+  - action: utter_dai_hoc_can_tho
+  - intent: dai_hoc_can_tho
+  - action: utter_dai_hoc_can_tho
+  - intent: bye
+  - action: utter_bye

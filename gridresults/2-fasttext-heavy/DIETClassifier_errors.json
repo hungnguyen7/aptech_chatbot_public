@@ -1,0 +1,1615 @@
+[
+  {
+    "text": "Em muốn đăng kí vào học khóa Lập trình Flutter thì cần gì ạ?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 29,
+        "end": 46,
+        "confidence_entity": 0.5299495458602905,
+        "value": "Lập trình Flutter",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Học Mỹ thuật đa phương tiện có cần vẽ đẹp không",
+    "entities": [
+      {
+        "start": 4,
+        "end": 27,
+        "value": "Mỹ thuật đa phương tiện",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 4,
+        "end": 27,
+        "confidence_entity": 0.998252809047699,
+        "value": "mỹ thuật đa phương tiện",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 38,
+        "end": 41,
+        "confidence_entity": 0.9277650117874146,
+        "value": "đẹp",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Em muốn đăng kí học đại học công nghệ thông tin",
+    "entities": [
+      {
+        "start": 20,
+        "end": 47,
+        "value": "đại học công nghệ thông tin",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 20,
+        "end": 23,
+        "confidence_entity": 0.9972891807556152,
+        "value": "đại",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 28,
+        "end": 47,
+        "confidence_entity": 0.9012004137039185,
+        "value": "đại học công nghệ thông tin",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Bằng ACN Pro có giá trị quốc tế không",
+    "entities": [
+      {
+        "start": 5,
+        "end": 12,
+        "value": "ACN Pro",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 5,
+        "end": 12,
+        "confidence_entity": 0.9829189777374268,
+        "value": "chuyên gia trí tuệ nhân tạo và máy học",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 20,
+        "end": 31,
+        "confidence_entity": 0.8223217725753784,
+        "value": "trị quốc tế",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "cho e hỏi có nghành thiết kế website không ạ",
+    "entities": [
+      {
+        "start": 20,
+        "end": 36,
+        "value": "thiết kế website",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 26,
+        "end": 28,
+        "confidence_entity": 0.9611798524856567,
+        "value": "kế",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "CHƯƠNG TRÌNH ĐÀO TẠO CNTT CHUẨN QUỐC TẾ",
+    "entities": [
+      {
+        "start": 21,
+        "end": 39,
+        "value": "CNTT CHUẨN QUỐC TẾ",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 21,
+        "end": 25,
+        "confidence_entity": 0.9888462424278259,
+        "value": "đại học công nghệ thông tin",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 32,
+        "end": 39,
+        "confidence_entity": 0.8257433772087097,
+        "value": "QUỐC TẾ",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Em muốn viết được app, web cho 1 game nào đó thì cần học khoá nào",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 18,
+        "end": 21,
+        "confidence_entity": 0.5401225090026855,
+        "value": "app",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 23,
+        "end": 26,
+        "confidence_entity": 0.43705928325653076,
+        "value": "web",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Xin chào, em muốn biết thông tin về khóa học Phát triển ứng dụng Android",
+    "entities": [
+      {
+        "start": 45,
+        "end": 72,
+        "value": "Phát triển ứng dụng Android",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 23,
+        "end": 32,
+        "confidence_entity": 0.9362976551055908,
+        "value": "thông tin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 45,
+        "end": 72,
+        "confidence_entity": 0.9981176853179932,
+        "value": "Phát triển ứng dụng Android",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Em muốn viết được app, web cho 1 game nào đó thì cần học khoá nào.",
+    "entities": [
+      {
+        "start": 18,
+        "end": 21,
+        "value": "app",
+        "entity": "khoa_hoc"
+      },
+      {
+        "start": 23,
+        "end": 26,
+        "value": "web",
+        "entity": "khoa_hoc"
+      },
+      {
+        "start": 33,
+        "end": 37,
+        "value": "game",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 18,
+        "end": 21,
+        "confidence_entity": 0.5401149392127991,
+        "value": "app",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 23,
+        "end": 26,
+        "confidence_entity": 0.43708163499832153,
+        "value": "web",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "em có thể học được khóa học thiết kế web và lập trình front end được không ạ",
+    "entities": [
+      {
+        "start": 28,
+        "end": 40,
+        "value": "thiết kế web",
+        "entity": "khoa_hoc"
+      },
+      {
+        "start": 44,
+        "end": 63,
+        "value": "lập trình front end",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 28,
+        "end": 43,
+        "confidence_entity": 0.5768722295761108,
+        "value": "thiết kế web và",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 44,
+        "end": 59,
+        "confidence_entity": 0.5130566954612732,
+        "value": "lập trình front",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho biết thông tin về ngành Công nghệ thông tin",
+    "entities": [
+      {
+        "start": 28,
+        "end": 47,
+        "value": "Công nghệ thông tin",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 9,
+        "end": 18,
+        "confidence_entity": 0.6017116904258728,
+        "value": "thông tin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 28,
+        "end": 47,
+        "confidence_entity": 0.9976859092712402,
+        "value": "đại học công nghệ thông tin",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Em vừa tốt nghiệp THPT, em muốn tìm hiểu và dự định xét tuyển nguyện vọng vào ngành Công nghệ thông tin Admin có thể cho một số tiêu chuẩn của mình không ạ?",
+    "entities": [
+      {
+        "start": 84,
+        "end": 103,
+        "value": "Công nghệ thông tin",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 89,
+        "end": 93,
+        "confidence_entity": 0.8068307638168335,
+        "value": "nghệ",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Em muốn hỏi về ngành Mỹ thuật tiện ạ",
+    "entities": [
+      {
+        "start": 21,
+        "end": 29,
+        "value": "Mỹ thuật",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 21,
+        "end": 34,
+        "confidence_entity": 0.998316764831543,
+        "value": "Mỹ thuật tiện",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Giới thiệu chương trình trí tuệ nhân tạo",
+    "entities": [
+      {
+        "start": 24,
+        "end": 40,
+        "value": "trí tuệ nhân tạo",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 18,
+        "end": 23,
+        "confidence_entity": 0.8431520462036133,
+        "value": "trình",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 24,
+        "end": 40,
+        "confidence_entity": 0.9830064177513123,
+        "value": "chuyên gia trí tuệ nhân tạo và máy học",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Chương trình Chuyên viên trí tuệ nhân tạo là gì",
+    "entities": [
+      {
+        "start": 25,
+        "end": 41,
+        "value": "trí tuệ nhân tạo",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 20,
+        "end": 24,
+        "confidence_entity": 0.9345977306365967,
+        "value": "viên",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 25,
+        "end": 41,
+        "confidence_entity": 0.949748158454895,
+        "value": "chuyên gia trí tuệ nhân tạo và máy học",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Ngành trí tuệ nhân tạo có gì ạ",
+    "entities": [
+      {
+        "start": 6,
+        "end": 18,
+        "value": "trí tuệ nhân",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 6,
+        "end": 22,
+        "confidence_entity": 0.9529154300689697,
+        "value": "chuyên gia trí tuệ nhân tạo và máy học",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Giới thiệu chương trình Điều tra tội phạm máy tính",
+    "entities": [
+      {
+        "start": 24,
+        "end": 50,
+        "value": "Điều tra tội phạm máy tính",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Giới thiệu chương trình An toàn và bảo mật thông tin cá nhân",
+    "entities": [
+      {
+        "start": 24,
+        "end": 60,
+        "value": "An toàn và bảo mật thông tin cá nhân",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 24,
+        "end": 34,
+        "confidence_entity": 0.951302170753479,
+        "value": "An toàn và",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 35,
+        "end": 52,
+        "confidence_entity": 0.9374392628669739,
+        "value": "an ninh thông tin",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 56,
+        "end": 60,
+        "confidence_entity": 0.6761179566383362,
+        "value": "nhân",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Giới thiệu chương trình phát triển ứng dụng ios",
+    "entities": [
+      {
+        "start": 24,
+        "end": 47,
+        "value": "phát triển ứng dụng ios",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 18,
+        "end": 23,
+        "confidence_entity": 0.9211083054542542,
+        "value": "trình",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 24,
+        "end": 43,
+        "confidence_entity": 0.9984707236289978,
+        "value": "phát triển ứng dụng",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 44,
+        "end": 47,
+        "confidence_entity": 0.8463596105575562,
+        "value": "ios",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Giới thiệu chương trình thiết kế và quản trị website với wordpress",
+    "entities": [
+      {
+        "start": 24,
+        "end": 66,
+        "value": "thiết kế và quản trị website với wordpress",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 24,
+        "end": 35,
+        "confidence_entity": 0.7993993163108826,
+        "value": "thiết kế và",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 36,
+        "end": 44,
+        "confidence_entity": 0.9510638117790222,
+        "value": "quản trị",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 53,
+        "end": 66,
+        "confidence_entity": 0.9183659553527832,
+        "value": "với wordpress",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Giới thiệu chương trình kiểm thử phần mềm",
+    "entities": [
+      {
+        "start": 24,
+        "end": 41,
+        "value": "kiểm thử phần mềm",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 33,
+        "end": 37,
+        "confidence_entity": 0.7915927171707153,
+        "value": "phần",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Khóa học lâp trình java",
+    "entities": [
+      {
+        "start": 19,
+        "end": 23,
+        "value": "java",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 9,
+        "end": 23,
+        "confidence_entity": 0.9351286292076111,
+        "value": "lâp trình java",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Trường mình có đào tạo đại học không?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 30,
+        "value": "đại học",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "hi ad, em muốn học đại học, ad tư ván giúp em.",
+    "entities": [
+      {
+        "start": 19,
+        "end": 26,
+        "value": "đại học",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "em muốn biết thông tin về ngành mỹ thuật đa phương tiện ạ",
+    "entities": [
+      {
+        "start": 32,
+        "end": 55,
+        "value": "mỹ thuật đa phương tiện",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 13,
+        "end": 22,
+        "confidence_entity": 0.7674741148948669,
+        "value": "thông tin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 32,
+        "end": 55,
+        "confidence_entity": 0.9988582134246826,
+        "value": "mỹ thuật đa phương tiện",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Còn chương trình trí tuệ nhân tạo thì sao ạ",
+    "entities": [
+      {
+        "start": 17,
+        "end": 33,
+        "value": "trí tuệ nhân tạo",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 11,
+        "end": 16,
+        "confidence_entity": 0.5736944079399109,
+        "value": "trình",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 17,
+        "end": 33,
+        "confidence_entity": 0.9508594870567322,
+        "value": "chuyên gia trí tuệ nhân tạo và máy học",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Khóa học kiểm thử phần mềm",
+    "entities": [
+      {
+        "start": 9,
+        "end": 26,
+        "value": "kiểm thử phần mềm",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "em muốn xét tuyển ngành lập trình viên thì cần làm gì?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 38,
+        "value": "lập trình viên quốc tế",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 24,
+        "end": 38,
+        "confidence_entity": 0.5941577553749084,
+        "value": "lập trình viên quốc tế",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 43,
+        "end": 46,
+        "confidence_entity": 0.4659337103366852,
+        "value": "cần",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Có thể liên thông lên Đại học để lấy bằng Cử Nhân CNTT được không?",
+    "entities": [
+      {
+        "start": 50,
+        "end": 54,
+        "value": "CNTT",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 45,
+        "end": 49,
+        "confidence_entity": 0.6719929575920105,
+        "value": "Nhân",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 50,
+        "end": 54,
+        "confidence_entity": 0.9550651907920837,
+        "value": "đại học công nghệ thông tin",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Em có thể học tiếp sau khi hoàn thành khóa Mỹ thuật đa phương tiện không",
+    "entities": [
+      {
+        "start": 43,
+        "end": 66,
+        "value": "Mỹ thuật đa phương tiện",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 27,
+        "end": 31,
+        "confidence_entity": 0.9741184115409851,
+        "value": "hoàn",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 43,
+        "end": 66,
+        "confidence_entity": 0.9985542893409729,
+        "value": "mỹ thuật đa phương tiện",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "ngành mỹ thuật đa phương tiện liên thông ở đâu?",
+    "entities": [
+      {
+        "start": 6,
+        "end": 29,
+        "value": "mỹ thuật đa phương tiện",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 6,
+        "end": 29,
+        "confidence_entity": 0.9983224272727966,
+        "value": "mỹ thuật đa phương tiện",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 35,
+        "end": 40,
+        "confidence_entity": 0.9925910234451294,
+        "value": "thông",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Học xong Aptech có thể liên thông ở Mỹ được k ạ",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 36,
+        "end": 38,
+        "confidence_entity": 0.9966201782226562,
+        "value": "Mỹ",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Học ngành Công nghệ thông tin cơ hội việc làm có cao không",
+    "entities": [
+      {
+        "start": 10,
+        "end": 29,
+        "value": "Công nghệ thông tin",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 10,
+        "end": 32,
+        "confidence_entity": 0.936443030834198,
+        "value": "Công nghệ thông tin cơ",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 49,
+        "end": 52,
+        "confidence_entity": 0.9272701740264893,
+        "value": "cao",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Đầu ra ngành này làm tại vị trí nào?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 28,
+        "end": 31,
+        "confidence_entity": 0.9966070652008057,
+        "value": "trí",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Học ngành Mỹ thuật đa phương tiện cơ hội việc làm có cao không",
+    "entities": [
+      {
+        "start": 10,
+        "end": 33,
+        "value": "Mỹ thuật đa phương tiện",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 10,
+        "end": 36,
+        "confidence_entity": 0.8373115062713623,
+        "value": "Mỹ thuật đa phương tiện cơ",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 53,
+        "end": 56,
+        "confidence_entity": 0.6659584641456604,
+        "value": "cao",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Học lập trình viên xong em có thể làm được việc gì, ad giúp em ạ",
+    "entities": [
+      {
+        "start": 4,
+        "end": 18,
+        "value": "lập trình viên",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 4,
+        "end": 7,
+        "confidence_entity": 0.9913401007652283,
+        "value": "lập",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 14,
+        "end": 18,
+        "confidence_entity": 0.7683984041213989,
+        "value": "viên",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ngành lập trình có dễ xin việc làm k",
+    "entities": [
+      {
+        "start": 6,
+        "end": 15,
+        "value": "lập trình",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 6,
+        "end": 9,
+        "confidence_entity": 0.9966149926185608,
+        "value": "lập",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Học phí mỹ thuật đa phương tiện có cao không?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 31,
+        "value": "mỹ thuật đa phương tiện",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 8,
+        "end": 31,
+        "confidence_entity": 0.9989340901374817,
+        "value": "mỹ thuật đa phương tiện",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 35,
+        "end": 38,
+        "confidence_entity": 0.9787179231643677,
+        "value": "cao",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "khóa học Phát triển ứng dụng Web với LARAVEL & ANGULARJS học trong bao lâu vậy ạk, học phí sao ạk",
+    "entities": [
+      {
+        "start": 20,
+        "end": 56,
+        "value": "ứng dụng Web với LARAVEL & ANGULARJS",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 9,
+        "end": 56,
+        "confidence_entity": 0.514137327671051,
+        "value": "Phát triển ứng dụng Web với LARAVEL & ANGULARJS",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Em hoi ve khoa hoc quan tri mang doanh nghiep: Hoc phi bao nhieu Thoi gian dao tao Dao tao",
+    "entities": [
+      {
+        "start": 19,
+        "end": 45,
+        "value": "quan tri mang doanh nghiep",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 24,
+        "end": 27,
+        "confidence_entity": 0.8988707661628723,
+        "value": "tri",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 33,
+        "end": 38,
+        "confidence_entity": 0.9919237494468689,
+        "value": "doanh",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Em muốn viết được app, web cho 1 game nào đó thì cần học khoá nào. Và thời gian học bao lâu, học phí bao nhiêu",
+    "entities": [
+      {
+        "start": 18,
+        "end": 26,
+        "value": "app, web",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Em muốn đăng kí ngành AI",
+    "entities": [
+      {
+        "start": 22,
+        "end": 24,
+        "value": "AI",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Điều kiện tuyển sinh chương trình chuẩn quốc tế là gì vậy ạ?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 40,
+        "end": 47,
+        "confidence_entity": 0.8543349504470825,
+        "value": "quốc tế",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn biết thông tin chương trình học",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 31,
+        "end": 40,
+        "confidence_entity": 0.6059483885765076,
+        "value": "trình học",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Em không biết vẽ, vậy có học MTĐPT được không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 29,
+        "end": 34,
+        "confidence_entity": 0.9941348433494568,
+        "value": "MTĐPT",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Em phải có năng khiếu mới học được ngành MTĐPT phải không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 41,
+        "end": 46,
+        "confidence_entity": 0.9939392805099487,
+        "value": "MTĐPT",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "em muốn đặng kí học đại học công nghệ thông tin ạ",
+    "entities": [
+      {
+        "start": 20,
+        "end": 47,
+        "value": "đại học công nghệ thông tin",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 8,
+        "end": 12,
+        "confidence_entity": 0.7381275296211243,
+        "value": "đặng",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 20,
+        "end": 47,
+        "confidence_entity": 0.530356228351593,
+        "value": "đại học công nghệ thông tin",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Để xét tuyển cao đằng cntt thì cần điều kiện như thế nào?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 26,
+        "value": "cao đằng cntt",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 22,
+        "end": 26,
+        "confidence_entity": 0.9655494689941406,
+        "value": "đại học công nghệ thông tin",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Để xét tuyển cao đẳng cnnt thì cần điều kiện như thế nào",
+    "entities": [
+      {
+        "start": 13,
+        "end": 26,
+        "value": "cao đẳng cnnt",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 17,
+        "end": 21,
+        "confidence_entity": 0.9779857397079468,
+        "value": "đẳng",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Môi trường học và trang thiết bị tại nơi học ra sao?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 24,
+        "end": 29,
+        "confidence_entity": 0.6921841502189636,
+        "value": "thiết",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Giới thiệu cho em chương trình trình đào tạo lập trình viên quốc tế với ạ?",
+    "entities": [
+      {
+        "start": 45,
+        "end": 67,
+        "value": "lập trình viên quốc tế",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 25,
+        "end": 36,
+        "confidence_entity": 0.8994251489639282,
+        "value": "trình trình",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 41,
+        "end": 44,
+        "confidence_entity": 0.9867021441459656,
+        "value": "tạo",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 45,
+        "end": 71,
+        "confidence_entity": 0.9092234373092651,
+        "value": "lập trình viên quốc tế với",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Chương trình lập trình viên quốc tế là gì?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 35,
+        "value": "lập trình viên quốc tế",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.6440153121948242,
+        "value": "trình",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 13,
+        "end": 35,
+        "confidence_entity": 0.7857606410980225,
+        "value": "lập trình viên quốc tế",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Ngành Công nghệ thông tin sẽ đào tạo những gì",
+    "entities": [
+      {
+        "start": 6,
+        "end": 25,
+        "value": "Công nghệ thông tin",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 6,
+        "end": 25,
+        "confidence_entity": 0.7229162454605103,
+        "value": "đại học công nghệ thông tin",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 33,
+        "end": 36,
+        "confidence_entity": 0.9908848404884338,
+        "value": "tạo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hiện em đang quan tâm đến ngành trí tuệ nhân tạo",
+    "entities": [
+      {
+        "start": 32,
+        "end": 48,
+        "value": "trí tuệ nhân tạo",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 13,
+        "end": 17,
+        "confidence_entity": 0.9983470439910889,
+        "value": "quan",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 22,
+        "end": 25,
+        "confidence_entity": 0.5987951755523682,
+        "value": "đến",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 32,
+        "end": 48,
+        "confidence_entity": 0.830028772354126,
+        "value": "chuyên gia trí tuệ nhân tạo và máy học",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Ngành Trí tuệ nhân tạo còn khá mới mẻ, vậy cho em hỏi chương trình đào tạo những kỹ năng gì, cơ hội thực hành trong quá trình học ra sao",
+    "entities": [
+      {
+        "start": 6,
+        "end": 22,
+        "value": "Trí tuệ nhân tạo",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 6,
+        "end": 22,
+        "confidence_entity": 0.5156623125076294,
+        "value": "chuyên gia trí tuệ nhân tạo và máy học",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 31,
+        "end": 34,
+        "confidence_entity": 0.9784066081047058,
+        "value": "mới",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ngành AI có gì ạ",
+    "entities": [
+      {
+        "start": 6,
+        "end": 8,
+        "value": "AI",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Em muốn học để làm app trên android ạ",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 19,
+        "end": 27,
+        "confidence_entity": 0.5224013328552246,
+        "value": "app trên",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 28,
+        "end": 35,
+        "confidence_entity": 0.5382396578788757,
+        "value": "android",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "em muốn biết chương tình đào tạo của ngành trí tuệ nhân tạo?",
+    "entities": [
+      {
+        "start": 43,
+        "end": 59,
+        "value": "trí tuệ nhân tạo",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 29,
+        "end": 32,
+        "confidence_entity": 0.9566730856895447,
+        "value": "tạo",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "khoa_hoc",
+        "start": 43,
+        "end": 59,
+        "confidence_entity": 0.8676198720932007,
+        "value": "chuyên gia trí tuệ nhân tạo và máy học",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Điều kiện để liên thông đại học quốc tế là như thế nào?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 32,
+        "end": 39,
+        "confidence_entity": 0.7097399830818176,
+        "value": "quốc tế",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Nhu cầu về việc làm của ngành Mĩ thuật đa phương tiện có cao không?",
+    "entities": [
+      {
+        "start": 30,
+        "end": 53,
+        "value": "Mĩ thuật đa phương tiện",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 33,
+        "end": 53,
+        "confidence_entity": 0.9112997651100159,
+        "value": "thuật đa phương tiện",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "trường có đảm bảo việc làm cho sinh viên k",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 36,
+        "end": 40,
+        "confidence_entity": 0.707697331905365,
+        "value": "viên",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cơ hội việc làm của ngành trí tuệ nhân tạo như thế nào ạ",
+    "entities": [
+      {
+        "start": 26,
+        "end": 42,
+        "value": "trí tuệ nhân tạo",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 26,
+        "end": 38,
+        "confidence_entity": 0.38761910796165466,
+        "value": "trí tuệ nhân",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Em được biết học phí khóa 1 của chương trình trên website. Vậy cho em hỏi học phí này có phát sinh gì thêm không và có chính sách hỗ trợ học phí dành cho sinh viên không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 50,
+        "end": 57,
+        "confidence_entity": 0.9582726955413818,
+        "value": "website",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Có thể cho em tham khảo học phí nghành Trí tuệ nhân tạo không ạ?",
+    "entities": [
+      {
+        "start": 39,
+        "end": 51,
+        "value": "Trí tuệ nhân",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 43,
+        "end": 51,
+        "confidence_entity": 0.3958551585674286,
+        "value": "tuệ nhân",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "khi nào mở lớp học Quản Trị mạng doanh nghiệp",
+    "entities": [
+      {
+        "start": 19,
+        "end": 45,
+        "value": "Quản Trị mạng doanh nghiệp",
+        "entity": "khoa_hoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 19,
+        "end": 38,
+        "confidence_entity": 0.6623401045799255,
+        "value": "Quản Trị mạng doanh",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Các công ty hợp tác với trường mình về lĩnh vực này là nhưng công ty nào?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "khoa_hoc",
+        "start": 4,
+        "end": 8,
+        "confidence_entity": 0.7573861479759216,
+        "value": "công",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

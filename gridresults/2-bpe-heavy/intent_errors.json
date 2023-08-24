@@ -1,0 +1,658 @@
+[
+  {
+    "text": "Hello world",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.4790503978729248
+    }
+  },
+  {
+    "text": "Hỏi tí được không",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "dai_hoc_can_tho",
+      "confidence": 0.21097686886787415
+    }
+  },
+  {
+    "text": "Em muốn đăng kí học ngành Mỹ thuật đa phương tiện ạ",
+    "intent": "dang_ky_xet_tuyen",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.9975710511207581
+    }
+  },
+  {
+    "text": "Điều kiện tuyển sinh chương trình chuẩn quốc tế là gì vậy ạ?",
+    "intent": "dieu_kien_tuyen_sinh_chuan_quoc_te",
+    "intent_prediction": {
+      "name": "doi_tuong_tuyen_sinh",
+      "confidence": 0.2900124490261078
+    }
+  },
+  {
+    "text": "Để được học và học được ở Aptech cần có những điều kiện gì?",
+    "intent": "dieu_kien_tuyen_sinh_chuan_quoc_te",
+    "intent_prediction": {
+      "name": "lien_thong_khoa_hoc",
+      "confidence": 0.5690814256668091
+    }
+  },
+  {
+    "text": "Cho biết thông tin các khóa học",
+    "intent": "chuong_trinh_hoc",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.9238065481185913
+    }
+  },
+  {
+    "text": "Trong khi học có thể học song song bằng không?",
+    "intent": "chuong_trinh_hoc",
+    "intent_prediction": {
+      "name": "kha_nang_toan_hoc",
+      "confidence": 0.25821447372436523
+    }
+  },
+  {
+    "text": "Tôi muốn biết thông tin chương trình học",
+    "intent": "chuong_trinh_hoc",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.9997227787971497
+    }
+  },
+  {
+    "text": "Em muốn đăng kí vào học khóa Lập trình Flutter thì cần gì ạ?",
+    "intent": "doi_tuong_tuyen_sinh",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.9992616772651672
+    }
+  },
+  {
+    "text": "Chương trình đào tạo Aptech dành cho những đối tượng nào?",
+    "intent": "doi_tuong_tuyen_sinh",
+    "intent_prediction": {
+      "name": "chuong_trinh_hoc",
+      "confidence": 0.7136573195457458
+    }
+  },
+  {
+    "text": "Em thích ngành Mỹ thuật đa phương tiện nhưng ba mẹ nói em không có năng khiếu nên không đồng ý",
+    "intent": "kha_nang_ve",
+    "intent_prediction": {
+      "name": "phong_hoc",
+      "confidence": 0.30086860060691833
+    }
+  },
+  {
+    "text": "Em phải có năng khiếu mới học được ngành MTĐPT phải không?",
+    "intent": "kha_nang_ve",
+    "intent_prediction": {
+      "name": "hoc_phi",
+      "confidence": 0.5333210229873657
+    }
+  },
+  {
+    "text": "Để xét tuyển cao đằng cntt thì cần điều kiện như thế nào?",
+    "intent": "dang_ki_cao_dang_dai_hoc_cntt",
+    "intent_prediction": {
+      "name": "lien_thong_khoa_hoc",
+      "confidence": 0.41116368770599365
+    }
+  },
+  {
+    "text": "điều kiện để học cao đẳng cntt là sao vậy thầy?",
+    "intent": "dang_ki_cao_dang_dai_hoc_cntt",
+    "intent_prediction": {
+      "name": "doi_tuong_tuyen_sinh",
+      "confidence": 0.33982500433921814
+    }
+  },
+  {
+    "text": "Để xét tuyển cao đẳng cnnt thì cần điều kiện như thế nào",
+    "intent": "dang_ki_cao_dang_dai_hoc_cntt",
+    "intent_prediction": {
+      "name": "lien_thong_khoa_hoc",
+      "confidence": 0.49572718143463135
+    }
+  },
+  {
+    "text": "Cho em hỏi trung tâm có những hình thức học nào",
+    "intent": "hinh_thuc_hoc",
+    "intent_prediction": {
+      "name": "chuong_trinh_hoc",
+      "confidence": 0.4257207214832306
+    }
+  },
+  {
+    "text": "Em có cần laptop không ạ",
+    "intent": "may_tinh",
+    "intent_prediction": {
+      "name": "kha_nang_ve",
+      "confidence": 0.596529483795166
+    }
+  },
+  {
+    "text": "Cơ sở vật chất ở trung tâm có tốt không ạ",
+    "intent": "phong_hoc",
+    "intent_prediction": {
+      "name": "dai_hoc_can_tho",
+      "confidence": 0.18787041306495667
+    }
+  },
+  {
+    "text": "Cơ sở vật chất ra sao?",
+    "intent": "phong_hoc",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.3209831118583679
+    }
+  },
+  {
+    "text": "Cơ sở vật chất của trường mình thế nào ạ?",
+    "intent": "phong_hoc",
+    "intent_prediction": {
+      "name": "dai_hoc_can_tho",
+      "confidence": 0.19319313764572144
+    }
+  },
+  {
+    "text": "Cho em hỏi chương trình đào tạo bằng tiếng Anh hay tiếng Việt và có giảng viên người nước ngoài tham gia giảng dạy không?",
+    "intent": "bang_cap_quoc_te",
+    "intent_prediction": {
+      "name": "dieu_kien_tuyen_sinh_chuan_quoc_te",
+      "confidence": 0.6840881109237671
+    }
+  },
+  {
+    "text": "Bằng quốc tế vậy có giá trị k ad ơi.",
+    "intent": "bang_cap_quoc_te",
+    "intent_prediction": {
+      "name": "acn_pro",
+      "confidence": 0.3425289988517761
+    }
+  },
+  {
+    "text": "Ngành Công nghệ thông tin sẽ đào tạo những gì",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "chuong_trinh_hoc",
+      "confidence": 0.8223558068275452
+    }
+  },
+  {
+    "text": "Em vừa tốt nghiệp THPT, em muốn tìm hiểu và dự định xét tuyển nguyện vọng vào ngành Công nghệ thông tin Admin có thể cho một số tiêu chuẩn của mình không ạ?",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "doi_tuong_tuyen_sinh",
+      "confidence": 0.37581783533096313
+    }
+  },
+  {
+    "text": "Ngành AI có gì ạ",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "co_hoi_viec_lam",
+      "confidence": 0.28410038352012634
+    }
+  },
+  {
+    "text": "Trường mình có đào tạo đại học không?",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "doi_tuong_tuyen_sinh",
+      "confidence": 0.20708124339580536
+    }
+  },
+  {
+    "text": "Cao đẳng thiết kế đồ họa là được học những gì?",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "co_hoi_viec_lam",
+      "confidence": 0.43120184540748596
+    }
+  },
+  {
+    "text": "Em muốn tìm hiều về ngành cntt",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc+hoc_phi",
+      "confidence": 0.5218737721443176
+    }
+  },
+  {
+    "text": "Em có thể học tiếp sau khi hoàn thành khóa Mỹ thuật đa phương tiện không",
+    "intent": "lien_thong_khoa_hoc",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.9967909455299377
+    }
+  },
+  {
+    "text": "em muốn biết thêm về ngành công nghệ thông tin",
+    "intent": "co_hoi_viec_lam",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.9701083302497864
+    }
+  },
+  {
+    "text": "Em muốn được tư vấn về mức lương ngành cntt",
+    "intent": "co_hoi_viec_lam",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.9920627474784851
+    }
+  },
+  {
+    "text": "Cho biết học phí ngành Công nghệ thông tin",
+    "intent": "hoc_phi",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.6277754902839661
+    }
+  },
+  {
+    "text": "Có thể cho em tham khảo học phí nghành Trí tuệ nhân tạo không ạ?",
+    "intent": "hoc_phi",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.9549269080162048
+    }
+  },
+  {
+    "text": "Dạ, còn về phần học phí, admin cho em hỏi là em cũng thuộc diện gia đình người dân tộc sống ở vùng đặc biệt khó khăn. Vậy em có được hưởng một số ưu đãi về phần đấy không ạ?",
+    "intent": "hoc_phi",
+    "intent_prediction": {
+      "name": "dai_hoc_can_tho",
+      "confidence": 0.36981603503227234
+    }
+  },
+  {
+    "text": "em muốn biết học phí ngành lập trình viên.",
+    "intent": "hoc_phi",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.9993913173675537
+    }
+  },
+  {
+    "text": "Em muốn biết học phí ngành Mỹ thuật đa phương tiện?",
+    "intent": "hoc_phi",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.9964266419410706
+    }
+  },
+  {
+    "text": "Thời gian học",
+    "intent": "thoi_gian_khoa_hoc",
+    "intent_prediction": {
+      "name": "thoi_gian_khoa_hoc+hoc_phi",
+      "confidence": 0.4787272810935974
+    }
+  },
+  {
+    "text": "Các nhà tuyển dụng, đối tác của Trường là ai.",
+    "intent": "nha_tuyen_dung_doi_tac",
+    "intent_prediction": {
+      "name": "doi_tuong_tuyen_sinh",
+      "confidence": 0.4621356427669525
+    }
+  },
+  {
+    "text": "Thời gian bắt đầu của khóa học này là khi nào vậy ạ, học phí thế nào ạ",
+    "intent": "thoi_gian_khoa_hoc+hoc_phi",
+    "intent_prediction": {
+      "name": "thoi_gian_khoa_hoc",
+      "confidence": 0.8806272745132446
+    }
+  },
+  {
+    "text": "Thời khóa biểu của khóa học là khi nào ạ? học phí thế nào ạ",
+    "intent": "thoi_gian_khoa_hoc+hoc_phi",
+    "intent_prediction": {
+      "name": "thoi_gian_khoa_hoc",
+      "confidence": 0.9246698021888733
+    }
+  },
+  {
+    "text": "Khi nào nhập học? Học phí thế nào ạ",
+    "intent": "thoi_gian_khoa_hoc+hoc_phi",
+    "intent_prediction": {
+      "name": "hoc_phi",
+      "confidence": 0.971239447593689
+    }
+  },
+  {
+    "text": "1 cộng 1 bằng mấy",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "dang_ki_cao_dang_dai_hoc_cntt",
+      "confidence": 0.891960859298706
+    }
+  },
+  {
+    "text": "hết covid chưa ta",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.5112994313240051
+    }
+  },
+  {
+    "text": "Em muốn đăng kí học chương trình Lập trình viên quốc tế, cho em hỏi học phí khóa này bao nhiêu vậy ạ",
+    "intent": "gioi_thieu_khoa_hoc+hoc_phi",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.6257845163345337
+    }
+  },
+  {
+    "text": "Em hoi ve khoa hoc quan tri mang doanh nghiep: Hoc phi bao nhieu Thoi gian dao tao Dao tao",
+    "intent": "gioi_thieu_khoa_hoc+hoc_phi+thoi_gian_khoa_hoc",
+    "intent_prediction": {
+      "name": "hoc_phi",
+      "confidence": 0.8818152546882629
+    }
+  },
+  {
+    "text": "Xin chào, em muốn biết thông tin về khóa học Phát triển ứng dụng Android về sỉ số còn lại, học phí",
+    "intent": "gioi_thieu_khoa_hoc+hoc_phi+thoi_gian_khoa_hoc",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.9997844696044922
+    }
+  },
+  {
+    "text": "Chương trình học được giảng dạy bằng tiếng Anh hay tiếng Việt?",
+    "intent": "dieu_kien_tuyen_sinh_chuan_quoc_te",
+    "intent_prediction": {
+      "name": "bang_cap_quoc_te",
+      "confidence": 0.7321866750717163
+    }
+  },
+  {
+    "text": "Em vừa tốt nghiệp cấp 3, muốn đăng kí vào học",
+    "intent": "doi_tuong_tuyen_sinh",
+    "intent_prediction": {
+      "name": "dang_ky_xet_tuyen",
+      "confidence": 0.5381671786308289
+    }
+  },
+  {
+    "text": "Điều kiện để được vào học tại trường là gì?",
+    "intent": "doi_tuong_tuyen_sinh",
+    "intent_prediction": {
+      "name": "dieu_kien_tuyen_sinh_chuan_quoc_te",
+      "confidence": 0.379530131816864
+    }
+  },
+  {
+    "text": "em không giỏi vẽ thì có sao không ạ",
+    "intent": "kha_nang_ve",
+    "intent_prediction": {
+      "name": "kha_nang_toan_hoc",
+      "confidence": 0.3128994405269623
+    }
+  },
+  {
+    "text": "Cho em biết thêm về chương trình song bằng 4.5 năm với ạ",
+    "intent": "dang_ki_cao_dang_dai_hoc_cntt",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.6749181747436523
+    }
+  },
+  {
+    "text": "Em muốn tìm hiểu về chương trình song bằng 4.5 năm",
+    "intent": "dang_ki_cao_dang_dai_hoc_cntt",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.48742035031318665
+    }
+  },
+  {
+    "text": "Em muốn đăng kí học đại học công nghệ thông tin",
+    "intent": "dang_ki_cao_dang_dai_hoc_cntt",
+    "intent_prediction": {
+      "name": "dang_ky_xet_tuyen",
+      "confidence": 0.7865926027297974
+    }
+  },
+  {
+    "text": "em muốn đặng kí học đại học công nghệ thông tin ạ",
+    "intent": "dang_ki_cao_dang_dai_hoc_cntt",
+    "intent_prediction": {
+      "name": "dang_ky_xet_tuyen",
+      "confidence": 0.39170536398887634
+    }
+  },
+  {
+    "text": "Ở trung tâm có phòng thực hành riêng không",
+    "intent": "phong_hoc",
+    "intent_prediction": {
+      "name": "lien_thong_khoa_hoc",
+      "confidence": 0.3841975927352905
+    }
+  },
+  {
+    "text": "Em nghe nói học ngành này cần nhiều thiết bị đúng không ah? Và Trường có hỗ trợ cho sinh viên mượn thiết bị để thực hành ngoài giờ không?",
+    "intent": "phong_hoc",
+    "intent_prediction": {
+      "name": "kha_nang_ve",
+      "confidence": 0.3696754574775696
+    }
+  },
+  {
+    "text": "Có nhiều hoạt động ngoại khóa cho sinh viên tham gia tìm hiểu không ạ?",
+    "intent": "phong_trao",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.5352172255516052
+    }
+  },
+  {
+    "text": "Ngoài các giờ học chính khóa có sinh hoạt ngoại khóa gì không?",
+    "intent": "phong_trao",
+    "intent_prediction": {
+      "name": "may_tinh",
+      "confidence": 0.3914564251899719
+    }
+  },
+  {
+    "text": "Bằng ACN Pro có giá trị quốc tế không",
+    "intent": "acn_pro",
+    "intent_prediction": {
+      "name": "bang_cap_quoc_te",
+      "confidence": 0.4703669846057892
+    }
+  },
+  {
+    "text": "Hi ad, Bằng kỹ sư AI do trung tâm có giá trị quốc tế hay không ?",
+    "intent": "acn_pro",
+    "intent_prediction": {
+      "name": "bang_cap_quoc_te",
+      "confidence": 0.9293626546859741
+    }
+  },
+  {
+    "text": "Em muốn viết được app, web cho 1 game nào đó thì cần học khoá nào",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.2585190534591675
+    }
+  },
+  {
+    "text": "Xin chào, em muốn biết thông tin về khóa học Phát triển ứng dụng Android",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc+hoc_phi+thoi_gian_khoa_hoc",
+      "confidence": 0.8816009759902954
+    }
+  },
+  {
+    "text": "Em muốn viết được app, web cho 1 game nào đó thì cần học khoá nào.",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.2585190236568451
+    }
+  },
+  {
+    "text": "Tôi muốn học Trí tuệ nhân tạo thì có thể học song song ngành nào?",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "chuong_trinh_hoc",
+      "confidence": 0.9289652109146118
+    }
+  },
+  {
+    "text": "Học nghành trí tuệ nhân tạo bao lâu thì có thể học song song nghành 2 ạ?",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "hoc_phi",
+      "confidence": 0.747244119644165
+    }
+  },
+  {
+    "text": "em muốn biết về app trên ios",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "hoc_phi",
+      "confidence": 0.32763877511024475
+    }
+  },
+  {
+    "text": "Khóa học android",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc+hoc_phi+thoi_gian_khoa_hoc",
+      "confidence": 0.7725628018379211
+    }
+  },
+  {
+    "text": "Em muốn học để làm app trên android ạ",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc+hoc_phi+thoi_gian_khoa_hoc",
+      "confidence": 0.5815545320510864
+    }
+  },
+  {
+    "text": "hi ad, em muốn học đại học, ad tư ván giúp em.",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "dang_ky_xet_tuyen",
+      "confidence": 0.3767614960670471
+    }
+  },
+  {
+    "text": "Em muốn đăng kí học lập trình viên ạ",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "dang_ky_xet_tuyen",
+      "confidence": 0.439419150352478
+    }
+  },
+  {
+    "text": "Em muốn đăng kí khóa học Mỹ thuật đa phương tiện ạ",
+    "intent": "gioi_thieu_khoa_hoc",
+    "intent_prediction": {
+      "name": "dang_ky_xet_tuyen",
+      "confidence": 0.8535634875297546
+    }
+  },
+  {
+    "text": "ngành mỹ thuật đa phương tiện liên thông ở đâu?",
+    "intent": "lien_thong_khoa_hoc",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.886657178401947
+    }
+  },
+  {
+    "text": "học trí tuệ nhân tạo ra làm được những gì vậy ad.",
+    "intent": "co_hoi_viec_lam",
+    "intent_prediction": {
+      "name": "he_vua_hoc_vua_lam",
+      "confidence": 0.40373390913009644
+    }
+  },
+  {
+    "text": "Hoc phi bao nhieu",
+    "intent": "hoc_phi",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc+hoc_phi+thoi_gian_khoa_hoc",
+      "confidence": 0.6221341490745544
+    }
+  },
+  {
+    "text": "khi nào mở lớp học Quản Trị mạng doanh nghiệp",
+    "intent": "thoi_gian_khoa_hoc",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.9996821284294128
+    }
+  },
+  {
+    "text": "khóa học Phát triển ứng dụng Web với LARAVEL & ANGULARJS học trong bao lâu vậy ạk, học phí sao ạk",
+    "intent": "thoi_gian_khoa_hoc+hoc_phi",
+    "intent_prediction": {
+      "name": "hoc_phi",
+      "confidence": 0.4308655858039856
+    }
+  },
+  {
+    "text": "Học phí ngành này là bao nhiêu và lịch học như thế nào vậy ạ",
+    "intent": "thoi_gian_khoa_hoc+hoc_phi",
+    "intent_prediction": {
+      "name": "hoc_phi",
+      "confidence": 0.4839533567428589
+    }
+  },
+  {
+    "text": "Thời gian học thế nào ạ",
+    "intent": "thoi_gian_khoa_hoc+hoc_phi",
+    "intent_prediction": {
+      "name": "thoi_gian_khoa_hoc",
+      "confidence": 0.9336671233177185
+    }
+  },
+  {
+    "text": "đói bụng quá đi thôi",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "bye",
+      "confidence": 0.3279610574245453
+    }
+  },
+  {
+    "text": "Em muốn tìm hiều về ngành CNTT và học phí của ngành này ạ",
+    "intent": "gioi_thieu_khoa_hoc+hoc_phi",
+    "intent_prediction": {
+      "name": "gioi_thieu_khoa_hoc",
+      "confidence": 0.964591920375824
+    }
+  },
+  {
+    "text": "Em muốn viết được app, web cho 1 game nào đó thì cần học khoá nào. Và thời gian học bao lâu, học phí bao nhiêu",
+    "intent": "gioi_thieu_khoa_hoc+hoc_phi+thoi_gian_khoa_hoc",
+    "intent_prediction": {
+      "name": "thoi_gian_khoa_hoc+hoc_phi",
+      "confidence": 0.4875662624835968
+    }
+  },
+  {
+    "text": "Em muốn biết thông tin ngành CNTT và học phí cũng như lịch học ạ",
+    "intent": "gioi_thieu_khoa_hoc+hoc_phi+thoi_gian_khoa_hoc",
+    "intent_prediction": {
+      "name": "hoc_phi",
+      "confidence": 0.9646503925323486
+    }
+  }
+]

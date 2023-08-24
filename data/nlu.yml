@@ -1,0 +1,459 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - Xin chào admin
+    - Hello world
+    - Hỏi tí được không
+    - Xin chào
+    - xin chào
+- intent: bye
+  examples: |
+    - Tạm biệt
+    - Cảm ơn rất nhiều
+    - Bye bye
+    - Goodbye
+    - ồ hay quá em cảm ơn ạ
+    - Tuyệt quá, em cảm ơn ạ
+- intent: so_luong_tuyen_sinh
+  examples: |
+    - Mỗi năm CUSC nhận vào bao nhiêu sinh viên ạ?
+    - Chỉ tiêu nhận sinh viên mỗi năm của CUSC là bao nhiêu ạ?
+    - Nhu cầu tuyển sinh mỗi năm của trung tâm là bao nhiêu ạ?
+    - Mỗi năm trung tâm nhận vào bao nhiêu sinh viên ạ?
+    - Trung tâm tuyển sinh bao nhiêu ạ
+    - chỉ tiêu tuyển sinh năm nay bao nhiêu vậy ad?
+    - Em muốn biết chỉ tiêu tuyển sinh là bao nhiêu?
+- intent: dang_ky_xet_tuyen
+  examples: |
+    - Em đăng kí xét tuyển vào trung tâm bằng cách nào ạ?
+    - Em muốn đăng kí xét tuyển vào ngành [CNTT](khoa_hoc) thì đăng kí thế nào ạ?
+    - Em muốn đăng kí xét tuyển vào ngành [Mỹ thuật đa phương tiện](khoa_hoc) thì đăng kí thế nào ạ?
+    - Hình thức đăng kí xét tuyển vào trung tâm như thế nào ạ?
+    - Em muốn đăng kí ngành [AI](khoa_hoc)
+    - Đăng kí thế nào ạ
+    - đăng kí thế nào ạ
+    - Em muốn đăng ký xét tuyển thì phải làm sao?
+    - thủ tục đăng ký xét tuyển như thế nào, ad giúp em ạ
+    - Em muốn đăng kí học ngành [Mỹ thuật đa phương tiện]{"entity": "khoa_hoc", "value": "m\u1ef9 thu\u1eadt \u0111a ph\u01b0\u01a1ng ti\u1ec7n"} ạ
+- intent: dieu_kien_tuyen_sinh_chuan_quoc_te
+  examples: |
+    - Em chưa có bằng tiếng Anh thì đăng kí chương trình [CNTT](khoa_hoc) chuẩn Quốc tế được không ạ?
+    - Em không giỏi tiếng Anh thì đăng kí chương trình chuẩn quốc tế được không ạ?
+    - Điều kiện tuyển sinh chương trình chuẩn quốc tế là gì vậy ạ?
+    - Chương trình học được giảng dạy bằng tiếng Anh hay tiếng Việt?
+    - Để được học và học được ở Aptech cần có những điều kiện gì?
+- intent: chuong_trinh_hoc
+  examples: |
+    - Trung tâm có những chương trình học gì?
+    - Các chương trình đào tạo của trung tâm bao gồm những ngành gì ạ?
+    - Trung tâm có những chương trình đào tạo nào?
+    - trung tâm có chương trình học gì ạ
+    - Cho biết thông tin các khóa học
+    - Trong khi học có thể học song song bằng không?
+    - Các chương trình học của trung tâm
+    - Tôi muốn biết thông tin chương trình học
+    - CUSC đào tạo gồm có ngành gì
+    - Trường đào tạo gồm những ngành nào?
+    - trung tâm hiện tại có chương trình đào tạo gì vậy ạ
+    - Trường đào tạo gồm những ngành nào?/CUSC đào tạo gồm có ngành gì
+- intent: doi_tuong_tuyen_sinh
+  examples: |
+    - Đối tượng tuyển sinh của trung tâm là những đối tượng nào ạ?
+    - Em vừa tốt nghiệp cấp 3, muốn đăng kí vào học
+    - Em muốn đăng kí vào học khóa Lập trình Flutter thì cần gì ạ?
+    - Chương trình đào tạo Aptech dành cho những đối tượng nào?
+    - đối tương tuyển sinh bao gồm ai ạ
+    - đối tượng tuyển sinh gồm ai ạ
+    - Điều kiện để được vào học tại trường là gì?
+    - điều kiện tuyển sinh như thế nào ạ?
+- intent: kha_nang_toan_hoc
+  examples: |
+    - Em không giỏi môn toán liệu có theo nổi không ạ
+    - Em học không giỏi toán thì có thể học [CNTT](khoa_hoc) không ạ
+    - em có cần giỏi toán không ạ
+    - em không giỏi toán học có được không ạ
+    - Học ngành này thì em có cần giỏi toán giỏi vật lý không ạ?
+    - Không có kiến thức nền ở mức giỏi về các môn toán học liệu có thể đáp ứng được yêu cầu khi học không ạ?
+- intent: kha_nang_ve
+  examples: |
+    - Em vẽ không đẹp thì học [MTĐPT](khoa_hoc) có được không ạ
+    - Học [MTĐPT](khoa_hoc) có cần vẽ đẹp không ạ
+    - Học [Mỹ thuật đa phương tiện](khoa_hoc) có cần vẽ đẹp không
+    - Em thích ngành [Mỹ thuật đa phương tiện](khoa_hoc) nhưng ba mẹ nói em không có năng khiếu nên không đồng ý
+    - Không biết vẽ có học được ngành [Thiết kế đồ họa](khoa_hoc) không?
+    - em không giỏi vẽ thì có sao không ạ
+    - Em không biết vẽ, vậy có học MTĐPT được không?
+    - Em phải có năng khiếu mới học được ngành MTĐPT phải không?
+    - có cần vẽ đẹp không ạ
+    - Em vẽ hơi xấu có học được không ạ
+- intent: dang_ki_cao_dang_dai_hoc_cntt
+  examples: |
+    - Cho em biết thêm về chương trình song bằng 4.5 năm với ạ
+    - Em muốn tìm hiểu về chương trình song bằng 4.5 năm
+    - Em muốn đăng kí học [đại học công nghệ thông tin](khoa_hoc)
+    - em muốn đặng kí học [đại học công nghệ thông tin](khoa_hoc) ạ
+    - Để xét tuyển [cao đằng cntt](khoa_hoc) thì cần điều kiện như thế nào?
+    - điều kiện để học [cao đẳng cntt](khoa_hoc) là sao vậy thầy?
+    - Để xét tuyển [cao đẳng cnnt](khoa_hoc) thì cần điều kiện như thế nào
+- intent: hinh_thuc_hoc
+  examples: |
+    - Cho em hỏi trung tâm có những hình thức học nào
+    - Hình thức học
+    - Em muốn biết thêm về hình thức đào tạo
+    - hình thức học thế nào ạ
+    - Trường có những hình thức đào tạo nào?
+- intent: dai_hoc_can_tho
+  examples: |
+    - Em học ở trung tâm có thể sử dụng tất cả dịch vụ được cung cấp tại Đại học Cần Thơ không ạ
+    - Em muốn sử dụng Kí túc xá tại ĐH Cần Thơ có được không ạ
+    - Khi nào học em có được ở ký túc xá hay sử dụng thư viện không ạ?
+    - Phòng gym đại học cần thơ em được dùng không ạ
+    - Em muốn ở KTX ở trường ĐH cần thơ được không ạ
+- intent: may_tinh
+  examples: |
+    - Em không có máy tính cá nhân có được không ạ
+    - Trường có cung cấp máy tính cá nhân cho sinh viên không ạ
+    - Trường có cung cấp máy tính không ạ
+    - em có cần máy tính không ạ
+    - Chào admin, em chưa có máy tính thì có học được không?
+    - Học ngành này có cần máy tính không ạ
+    - em có được cung cấp máy tính không ạ
+    - Em có cần laptop không ạ
+- intent: phong_hoc
+  examples: |
+    - Cơ sở vật chất ở trung tâm có tốt không ạ
+    - Ở trung tâm có phòng thực hành riêng không
+    - Môi trường học và trang thiết bị tại nơi học ra sao?
+    - Cơ sở vật chất ra sao?
+    - Cơ sở vật chất của trường mình thế nào ạ?
+    - Dạ, hiện tại thì cơ sở vật chất bên mình như thế nào admin ạ, em thấy có nhiều trung tâm giờ cũng tốt lắm. Admin cho thể cho em tham khảo về cơ sở vật chất và trang thiết bị bên mình không ạ?
+    - Em nghe nói học ngành này cần nhiều thiết bị đúng không ah? Và Trường có hỗ trợ cho sinh viên mượn thiết bị để thực hành ngoài giờ không?
+- intent: phong_trao
+  examples: |
+    - Ngoài chương trình học chính khóa, phía Trung tâm có hoạt động gì cho sinh viên không?
+    - Trung tâm có tổ chức phong trào thường xuyên không
+    - Trung tâm có tổ chức phong trào cho sinh viên không ạ
+    - Có nhiều hoạt động ngoại khóa cho sinh viên tham gia tìm hiểu không ạ?
+    - Ngoài các giờ học chính khóa có sinh hoạt ngoại khóa gì không?
+    - trung tâm có tổ chức hoạt động ngoaị khóa không ạ
+    - trung tâm có tổ chức phong trào gì không ạ
+- intent: bang_cap_quoc_te
+  examples: |
+    - Bằng cấp quốc tế là gì ạ
+    - Bằng cấp quốc tế có giá trị như thế nào
+    - Cho em hỏi chương trình đào tạo bằng tiếng Anh hay tiếng Việt và có giảng viên người nước ngoài tham gia giảng dạy không?
+    - Bằng được cấp sau khi học Aptech có giá trị gì?
+    - bằng cấp quốc tế là gì vây ạ
+    - Bằng cấp thế nào ạ
+    - Bằng quốc tế vậy có giá trị k ad ơi.
+- intent: acn_pro
+  examples: |
+    - Bằng [ACN Pro](khoa_hoc) là gì
+    - Bằng [ACN Pro](khoa_hoc) có giá trị quốc tế không
+    - Hi ad, Bằng kỹ sư AI do trung tâm có giá trị quốc tế hay không ?
+- intent: gioi_thieu_khoa_hoc
+  examples: |
+    - cho e hỏi có nghành [thiết kế website](khoa_hoc) không ạ
+    - Thông tin chi tiết về [Lập trình](khoa_hoc)
+    - Thông tin về gói học [web và java](khoa_hoc)
+    - muốn đăng kí khóa học
+    - Giới thiệu cho em chương trình trình đào tạo [lập trình viên quốc tế](khoa_hoc) với ạ?
+    - Chương trình [lập trình viên quốc tế](khoa_hoc) là gì?
+    - CHƯƠNG TRÌNH ĐÀO TẠO [CNTT CHUẨN QUỐC TẾ](khoa_hoc)
+    - Em muốn viết được app, web cho 1 game nào đó thì cần học khoá nào
+    - Ngành [Công nghệ thông tin](khoa_hoc) sẽ đào tạo những gì
+    - Xin chào, em muốn biết thông tin về khóa học [Phát triển ứng dụng Android](khoa_hoc)
+    - Em muốn viết được [app](khoa_hoc), [web](khoa_hoc) cho 1 [game](khoa_hoc) nào đó thì cần học khoá nào.
+    - em có thể học được khóa học [thiết kế web](khoa_hoc) và [lập trình front end](khoa_hoc) được không ạ
+    - em muốn đăng kí khóa [lập trình viên quốc tế](khoa_hoc) ạ
+    - Em muốn biết thêm về ngành [Lập trình viên quốc tế](khoa_hoc)
+    - Cho biết thông tin về ngành [Công nghệ thông tin](khoa_hoc)
+    - Thông tin ngành [Lập trình viên quốc tế](khoa_hoc)
+    - Em vừa tốt nghiệp THPT, em muốn tìm hiểu và dự định xét tuyển nguyện vọng vào ngành [Công nghệ thông tin](khoa_hoc) Admin có thể cho một số tiêu chuẩn của mình không ạ?
+    - Tôi muốn đăng kí khóa học [Lập trình viên](khoa_hoc)
+    - Giới thiệu chương trình [Mỹ thuật đa phương tiện](khoa_hoc)
+    - Chương trình [Mỹ thuật đa phương tiện](khoa_hoc) là gì
+    - Em muốn hỏi về ngành [Mỹ thuật đa phương tiện](khoa_hoc)
+    - Em muốn hỏi về ngành [Mỹ thuật](khoa_hoc) tiện ạ
+    - Em muốn hỏi về ngành [Mỹ thuật đa phương tiện](khoa_hoc) ạ
+    - Giới thiệu chương trình [trí tuệ nhân tạo](khoa_hoc)
+    - Chương trình Chuyên viên [trí tuệ nhân tạo](khoa_hoc) là gì
+    - Hiện em đang quan tâm đến ngành [trí tuệ nhân tạo](khoa_hoc)
+    - Ngành [Trí tuệ nhân tạo](khoa_hoc) còn khá mới mẻ, vậy cho em hỏi chương trình đào tạo những kỹ năng gì, cơ hội thực hành trong quá trình học ra sao
+    - Ngành [AI](khoa_hoc) có gì ạ
+    - Ngành [trí tuệ nhân](khoa_hoc) tạo có gì ạ
+    - Thông tin ngành [Trí tuệ nhân tạo](khoa_hoc)
+    - Tôi muốn học [Trí tuệ nhân tạo](khoa_hoc) thì có thể học song song ngành nào?
+    - Học nghành [trí tuệ nhân tạo](khoa_hoc) bao lâu thì có thể học song song nghành 2 ạ?
+    - Giới thiệu chương trình [An ninh thông tin](khoa_hoc)
+    - Giới thiệu chương trình [Quản trị mạng doanh nghiệp](khoa_hoc)
+    - Giới thiệu chương trình [Thiết kế và cài đặt mạng](khoa_hoc)
+    - Giới thiệu chương trình [Bảo mật ứng dụng web](khoa_hoc)
+    - Giới thiệu chương trình [Điều tra tội phạm máy tính](khoa_hoc)
+    - Giới thiệu chương trình [Phát triển ứng dụng web với php và mysql](khoa_hoc)
+    - Giới thiệu chương trình [Phát triển ứng dụng web với laravel và angularjs](khoa_hoc)
+    - Giới thiệu chương trình [Phát triển ứng dụng web với java ee](khoa_hoc)
+    - Giới thiệu chương trình [Lập trình c# căn bản](khoa_hoc)
+    - Giới thiệu chương trình [lập trình java căn bản](khoa_hoc)
+    - Giới thiệu chương trình [phát triển ứng dụng android](khoa_hoc)
+    - Giới thiệu chương trình [An toàn và bảo mật thông tin cá nhân](khoa_hoc)
+    - Giới thiệu chương trình [phát triển ứng dụng ios](khoa_hoc)
+    - Giới thiệu chương trình [thiết kế và quản trị website với wordpress](khoa_hoc)
+    - Giới thiệu chương trình [kiểm thử phần mềm](khoa_hoc)
+    - Giới thiệu chương trình [lập trình ardruino cơ bản](khoa_hoc)
+    - em muốn biết tìm hiểu về [An ninh mạng](khoa_hoc)
+    - em muốn biết về [app](khoa_hoc) trên [ios](khoa_hoc)
+    - Khóa học [an ninh thông tin](khoa_hoc)
+    - Khóa học [android](khoa_hoc)
+    - Khóa học lâp trình [java](khoa_hoc)
+    - Khóa học [an toàn thông tin](khoa_hoc)
+    - Khóa học [Lập trình viên](khoa_hoc)
+    - Giới thiệu khóa học [công nghệ thông tin](khoa_hoc)
+    - KHóa học [công nghệ thông tin](khoa_hoc)
+    - Khoá học [Mỹ thuật đa phương tiện](khoa_hoc)
+    - Khóa học [lập trình viên quốc tế](khoa_hoc)
+    - Em muốn học để làm app trên android ạ
+    - Em muốn tìm hiều về ngành [Mỹ thuật đa phương tiện](khoa_hoc) ạ
+    - Giới thiệu ngành [Mỹ thuật đa phương tiện](khoa_hoc)
+    - Ngành [CNTT](khoa_hoc)
+    - Khóa học [Công nghệ thông tin](khoa_hoc)
+    - Khóa học [CNTT](khoa_hoc)
+    - Giới thiệu ngành [lập trình quốc tế](khoa_hoc)
+    - Thông tin ngành [lập trình viên quốc tế](khoa_hoc)
+    - Ngành [lập trình viên](khoa_hoc) học về những gì?
+    - chào admin, ngành [lập trình](khoa_hoc) học về gì ạ?
+    - Ngành [trí tuệ nhân tạo](khoa_hoc) học được học về những gì?
+    - em muốn biết chương tình đào tạo của ngành [trí tuệ nhân tạo](khoa_hoc)?
+    - Trường mình có đào tạo [đại học](khoa_hoc) không?
+    - hi ad, em muốn học [đại học](khoa_hoc), ad tư ván giúp em.
+    - Em muốn biết về chương trình [cao đẳng cntt](khoa_hoc) là như thế nào?
+    - [Cao đẳng thiết kế đồ họa](khoa_hoc) là được học những gì?
+    - em muốn biết thông tin về ngành [mỹ thuật đa phương tiện](khoa_hoc) ạ
+    - Còn chương trình [trí tuệ nhân tạo](khoa_hoc) thì sao ạ
+    - Em muốn đăng kí học [lập trình viên](khoa_hoc) ạ
+    - Em muốn tìm hiều về ngành [cntt](khoa_hoc)
+    - Ngành [Mỹ thuật đa phương tiện](khoa_hoc) là học gì ạ
+    - Em muốn đăng kí khóa học [Mỹ thuật đa phương tiện]{"entity": "khoa_hoc", "value": "m\u1ef9 thu\u1eadt \u0111a ph\u01b0\u01a1ng ti\u1ec7n"} ạ
+    - Khóa học [kiểm thử phần mềm](khoa_hoc)
+    - khóa học [Phát triển ứng dụng Web với PHP và MySQL](khoa_hoc)
+    - Khóa học [Lập trình web php](khoa_hoc)
+    - Khóa học [Lập trình viên quốc tế]{"entity": "khoa_hoc", "value": "l\u1eadp tr\u00ecnh vi\u00ean qu\u1ed1c t\u1ebf"}
+    - Cho em hỏi ngành [Mỹ thuật đa phương tiện]{"entity": "khoa_hoc", "value": "m\u1ef9 thu\u1eadt \u0111a ph\u01b0\u01a1ng ti\u1ec7n"} có gì ạ
+    - em muốn xét tuyển ngành [lập trình viên]{"entity": "khoa_hoc", "value": "l\u1eadp tr\u00ecnh vi\u00ean qu\u1ed1c t\u1ebf"} thì cần làm gì?
+    - Điều kiện xét tuyển của ngành [lập trình viên]{"entity": "khoa_hoc", "value": "l\u1eadp tr\u00ecnh vi\u00ean qu\u1ed1c t\u1ebf"}?
+    - Mình đang quan tâm về khóa học [quản trị mạng doanh nghiệp](khoa_hoc), nhưng có một số thắc mắc là mình chuyên ngành học của mình không phải CNTT thì có học được hay không?
+- intent: lien_thong_khoa_hoc
+  examples: |
+    - Sau khi học xong khóa [lập trình viên quốc tế](khoa_hoc) em có thể liên thông lên Đại học không
+    - Học xong khóa này em có được liên thông lên đại học không
+    - Có thể liên thông lên Đại học để lấy bằng Cử Nhân [CNTT](khoa_hoc) được không?
+    - liên thông lên đại học được không ạ
+    - Sau khi học xong khóa này em có thể liên thông lên đại học không
+    - Em có thể học tiếp sau khi hoàn thành khóa [Mỹ thuật đa phương tiện](khoa_hoc) không
+    - Liên thông đại học
+    - Liên thông
+    - Liên thông lên đại học
+    - Sau khi em học xong [mỹ thuật đa phương tiện](khoa_hoc) em có thể liên thông lên đại học đc k ạ?
+    - ngành [mỹ thuật đa phương tiện](khoa_hoc) liên thông ở đâu?
+    - Điều kiện để liên thông đại học quốc tế là như thế nào?
+    - để liên thông đại học thì cần có điều kiện gì
+    - Học xong Aptech có thể liên thông ở Mỹ được k ạ
+    - sau khi học xong e có thể liên thông lên đại học không ạ
+    - Sau này em muốn liên thông lên đại học có được khong ạ
+    - Em muốn liên thông bên ngành [lập trình viên]{"entity": "khoa_hoc", "value": "l\u1eadp tr\u00ecnh vi\u00ean qu\u1ed1c t\u1ebf"} thì có được không?
+- intent: co_hoi_viec_lam
+  examples: |
+    - Học ngành này xong em có cơ hội đi làm ở đâu
+    - Học ngành này lương có cao không
+    - Học ngành [Công nghệ thông tin](khoa_hoc) cơ hội việc làm có cao không
+    - Nhu cầu về việc làm của ngành [CNTT](khoa_hoc) có cao không?
+    - em muốn biết thêm về ngành [công nghệ thông tin](khoa_hoc)
+    - Đầu ra ngành này làm tại vị trí nào?
+    - Khi học xong, em có được hỗ trợ việc làm khi tốt nghiệp không ạ?
+    - Học ngành [Mỹ thuật đa phương tiện](khoa_hoc) cơ hội việc làm có cao không
+    - Nhu cầu về việc làm của ngành [Mĩ thuật đa phương tiện](khoa_hoc) có cao không?
+    - Cơ hội việc làm tốt không ạ
+    - Đầu ra của ngành này làm gì?
+    - Cơ hội việc làm có cao không ạế
+    - Lương có cao không ạ
+    - cơ hội viejc làm
+    - Cơ hội việc làm ngành này
+    - Sau khi học xong em có đuọc giới thiệu việc làm không vậy?
+    - trường có đảm bảo việc làm cho sinh viên k
+    - ngành này dễ xin việc k
+    - Học [lập trình viên](khoa_hoc) xong em có thể làm được việc gì, ad giúp em ạ
+    - ngành [lập trình](khoa_hoc) có dễ xin việc làm k
+    - Cơ hội việc làm của ngành [trí tuệ nhân tạo](khoa_hoc) như thế nào ạ
+    - học [trí tuệ nhân tạo](khoa_hoc) ra làm được những gì vậy ad.
+    - Học xong [Mỹ thuật đa phương tiện](khoa_hoc) em sẽ làm được gì
+    - cơ hội việc làm của ngành [mỹ thuật đa phương tiện](khoa_hoc) là ở đâu ạ?
+    - cơ hội việc làm có cao không ạ
+    - Em muốn được tư vấn về mức lương ngành [cntt]{"entity": "khoa_hoc", "value": "\u0111\u1ea1i h\u1ecdc c\u00f4ng ngh\u1ec7 th\u00f4ng tin"}
+- intent: hoc_phi
+  examples: |
+    - học phí
+    - học phí bao nhiêu
+    - Cho e hỏi học phí thì như thế nào ạ.
+    - Học phí ngành này bao nhiêu ạ
+    - Hoc phi bao nhieu
+    - Cho e hỏi học phí thì như thế nào ạ
+    - học phí bao nhiêu
+    - Em được biết học phí khóa 1 của chương trình trên website. Vậy cho em hỏi học phí này có phát sinh gì thêm không và có chính sách hỗ trợ học phí dành cho sinh viên không?
+    - Cho e hỏi học phí thì như thế nào ạ. Nếu đăng kí học thì phải đăng kí 4 học kì hay sao ạ?
+    - Học phí khóa học: [CNTT](khoa_hoc) bao nhiêu?
+    - học phí bao nhiêu ạ
+    - học phí thế nào ạ
+    - Học phí như thế nào?
+    - Cho biết học phí ngành [Công nghệ thông tin](khoa_hoc)
+    - Học phí ngành này ra sao?
+    - Có thể cho em tham khảo mức học phí của trường mình đc kh ạ.
+    - Có thể cho em tham khảo học phí nghành [Trí tuệ nhân](khoa_hoc) tạo không ạ?
+    - Dạ, còn về phần học phí, admin cho em hỏi là em cũng thuộc diện gia đình người dân tộc sống ở vùng đặc biệt khó khăn. Vậy em có được hưởng một số ưu đãi về phần đấy không ạ?
+    - Dạ, nếu vậy thì tốt quá. Vậy admin cho em tham khảo chương trình đó như thế nào? Và mức học phí khi đã miễn giảm là bao nhiêu để em thông báo với phụ huynh của em á Admin.
+    - Học phí khóa học: [An toàn, an ninh thông tin](khoa_hoc) bao nhiêu?
+    - Học phí ngành [Lập trình viên](khoa_hoc) bao nhiêu 1 học kỳ?
+    - em muốn biết học phí ngành [lập trình viên](khoa_hoc).
+    - Em muốn biết học phí ngành [Mỹ thuật đa phương tiện](khoa_hoc)?
+    - Học phí [mỹ thuật đa phương tiện](khoa_hoc) có cao không?
+    - Học phí ngành này thế nào ạ
+    - Học phí bao nhiêu vậy ạ
+    - Học phí thế nào ạ
+    - Học phí ngành [trí tuệ nhân tạo]{"entity": "khoa_hoc", "value": "chuy\u00ean gia tr\u00ed tu\u1ec7 nh\u00e2n t\u1ea1o v\u00e0 m\u00e1y h\u1ecdc"} là bao nhiêu?
+- intent: thoi_gian_khoa_hoc
+  examples: |
+    - lịch học như thế nào
+    - lịch học cụ thể ra sao
+    - khi nào mở lớp học [Quảng Trị mạng doanh nghiệp](khoa_hoc)
+    - Thời gian bắt đầu của khóa học này là khi nào vậy ạ
+    - Thời khóa biểu của khóa học này là thế nào vậy ạ
+    - khóa học này bắt đầu khi nào vậy ạ
+    - Khóa học này học thứ mấy vậy ạ
+    - Thời khóa biểu của khóa học
+    - Lịch khai giảng
+    - Thời khóa biểu
+    - Thời khóa biểu như thế nào ạ
+    - Lịch học thế nào ạ
+    - khi nào mở lớp học [Quản Trị mạng doanh nghiệp](khoa_hoc)
+    - Thời khóa biểu khóa học
+    - lịch học thế nào vậy ạ
+    - Thời khóa biểu thế nào ja
+    - Thời gian học
+    - thời gian học thế nào ạ
+    - lịch học sao ạ
+    - Lịch học sao ạ
+    - Lịch học sao ja
+    - Lịch học thì sao ạ
+    - Lịch khai giảng khóa học [lập trình](khoa_hoc)
+    - thời gian
+- intent: he_vua_hoc_vua_lam
+  examples: |
+    - Cho em hỏi bằng đại học mà hệ vừa làm vừa học là như thế nào vậy?
+    - hệ vừa làm vừa học có khác hệ chính quy không ạ?
+    - hề vừa học vừa làm là gì
+    - Em có thể vừa học vừa làm không ạ
+    - Hệ vừa học vừa làm là gì ạ
+- intent: nha_tuyen_dung_doi_tac
+  examples: |
+    - Các nhà tuyển dụng, đối tác của Trường là ai.
+    - Các công ty hợp tác với trường mình về lĩnh vực này là nhưng công ty nào?
+    - Trường có liên kết với các nhà tuyển dụng không
+    - Trung tâm có phối hợp với các nhà tuyển dụng không ạ
+    - CUSC có hợp tác với các nhà tuyển dụng không ạ
+- intent: thoi_gian_khoa_hoc+hoc_phi
+  examples: |
+    - Có phải muốn học [lập trình viên](khoa_hoc) điều kiện chỉ cần tốt nghiệp 12/12 và học phí toàn khoá cho [đại học](khoa_hoc) 4,5 năm là bao nhiêu, Cảm ơn
+    - Thời gian bắt đầu của khóa học này là khi nào vậy ạ, học phí thế nào ạ
+    - Thời khóa biểu của khóa học là khi nào ạ? học phí thế nào ạ
+    - Khi nào nhập học? Học phí thế nào ạ
+    - khóa học Phát triển [ứng dụng Web với LARAVEL & ANGULARJS](khoa_hoc) học trong bao lâu vậy ạk, học phí sao ạk
+    - Học phí ngành này là bao nhiêu và lịch học như thế nào vậy ạ
+    - Học phí và lịch học thế nào vậy ạ
+    - Thời gian học thế nào ạ
+    - Học phí và thời gian học thế nào ạ
+    - lịch học và học phí bao nhiêu vậy ạ
+- intent: out_of_scope
+  examples: |
+    - 1 cộng 1 bằng mấy
+    - đặt 2 cái pizza
+    - đói bụng quá đi thôi
+    - hết covid chưa ta
+- intent: gioi_thieu_khoa_hoc+hoc_phi
+  examples: |
+    - Em muốn đăng kí học chương trình [Lập trình viên quốc tế](khoa_hoc), cho em hỏi học phí khóa này bao nhiêu vậy ạ
+    - Em muốn tìm hiều về ngành [CNTT](khoa_hoc) và học phí của ngành này ạ
+- intent: gioi_thieu_khoa_hoc+hoc_phi+thoi_gian_khoa_hoc
+  examples: |
+    - Giới thiệu khóa học [acn pro](khoa_hoc), học phí và lịch học
+    - Em hoi ve khoa hoc [quan tri mang doanh nghiep]: Hoc phi bao nhieu Thoi gian dao tao Dao tao chuyen ve linh nao Ket thuc khoa hoc duoc cap chung chi j ? E xim cam on ah!
+    - Lớp sơ cấp [công nghe thong tin](khoa_hoc) khi nào mở và học phí bao nhiêu ạ
+    - Em hoi ve khoa hoc [quan tri mang doanh nghiep](khoa_hoc): Hoc phi bao nhieu Thoi gian dao tao Dao tao
+    - Xin chào, em muốn biết thông tin về khóa học [Phát triển ứng dụng Android](khoa_hoc) về sỉ số còn lại, học phí
+    - Em muốn viết được [app, web](khoa_hoc) cho 1 game nào đó thì cần học khoá nào. Và thời gian học bao lâu, học phí bao nhiêu
+    - Em muốn biết thông tin ngành [CNTT](khoa_hoc) và học phí cũng như lịch học ạ
+    - khóa học [Phát triển ứng dụng Web với LARAVEL & ANGULARJS](khoa_hoc) học trong bao lâu vậy ạk, học phí sao ạk, với nếu bị mất gốc kiến thức có học dc ko ạk
+- synonym: mỹ thuật đa phương tiện
+  examples: |
+    - Mỹ thuật đa phương tiện
+    - Thiết kế đồ họa
+    - Thiết kế quảng cáo
+    - Mĩ thuật đa phương tiện
+    - Mĩ thuật
+- synonym: lập trình viên quốc tế
+  examples: |
+    - Lập trình viên quốc tế
+    - lập trình viên
+    - Khoa học máy tính
+    - Lập trình quốc tế
+    - app, web
+    - application and website
+- synonym: đại học công nghệ thông tin
+  examples: |
+    - cntt
+    - đại học cntt
+    - đh cntt
+    - công nghệ thông tin
+    - Công nghệ thông tin
+    - CNTT
+    - CNTT CHUẨN QUỐC TẾ
+- synonym: chuyên gia trí tuệ nhân tạo và máy học
+  examples: |
+    - trí tuệ nhân tạo
+    - Lập trình AI
+    - AI
+    - Machine Learning
+    - acn pro
+- synonym: cao đẳng công nghệ thông tin
+  examples: |
+    - cao đẳng cntt
+- synonym: lập trình ardruino cơ bản
+  examples: |
+    - lập trình iot
+- synonym: an ninh thông tin
+  examples: |
+    - hacker mũ trắng
+    - bảo mật thông tin
+- synonym: quản trị mạng doanh nghiệp
+  examples: |
+    - quan tri mang doanh nghiep
+    - quản trị hệ thống mạng
+- synonym: phát triển ứng dụng web với laravel
+  examples: |
+    - lập trình web
+    - lập trình web với Laravel
+    - lập trình web với anglularjs
+    - Phát triển ứng dụng Web với Laravel & AngularJS
+    - Phát triển ứng dụng Web với LARAVEL và ANGULARJS
+- synonym: phát triển ứng dụng web với php
+  examples: |
+    - phát triển web với php
+    - lập trình web với php
+    - Lập trình ứng dụng web với php
+- synonym: phát triển ứng dụng web với java
+  examples: |
+    - lập trình web với java
+    - phát triển web với java
+- synonym: phát triển ứng dụng web với asp
+  examples: |
+    - phát triển web với asp.net
+    - phát triển web mvc

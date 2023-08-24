@@ -1,0 +1,9 @@
+__pycache__
+rasa.db
+events.db
+events.db-shm
+events.db-wal
+custom_components/__pycache__
+pretrained_model
+.env
+.idea

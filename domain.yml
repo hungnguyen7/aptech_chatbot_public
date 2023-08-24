@@ -1,0 +1,191 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false
+intents:
+- greet:
+    use_entities: true
+- bye:
+    use_entities: true
+- so_luong_tuyen_sinh:
+    use_entities: true
+- dang_ky_xet_tuyen:
+    use_entities: true
+- dieu_kien_tuyen_sinh_chuan_quoc_te:
+    use_entities: true
+- chuong_trinh_hoc:
+    use_entities: true
+- doi_tuong_tuyen_sinh:
+    use_entities: true
+- kha_nang_toan_hoc:
+    use_entities: true
+- kha_nang_ve:
+    use_entities: true
+- dang_ki_cao_dang_dai_hoc_cntt:
+    use_entities: true
+- hinh_thuc_hoc:
+    use_entities: true
+- gioi_thieu_khoa_hoc:
+    use_entities: true
+- dai_hoc_can_tho:
+    use_entities: true
+- may_tinh:
+    use_entities: true
+- phong_hoc:
+    use_entities: true
+- phong_trao:
+    use_entities: true
+- bang_cap_quoc_te:
+    use_entities: true
+- acn_pro:
+    use_entities: true
+- lien_thong_khoa_hoc:
+    use_entities: true
+- hoc_phi:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- co_hoi_viec_lam:
+    use_entities: true
+- thoi_gian_khoa_hoc:
+    use_entities: true
+- he_vua_hoc_vua_lam:
+    use_entities: true
+- nha_tuyen_dung_doi_tac:
+    use_entities: true
+- thoi_gian_khoa_hoc+hoc_phi:
+    use_entities: true
+- gioi_thieu_khoa_hoc+hoc_phi:
+    use_entities: true
+- gioi_thieu_khoa_hoc+hoc_phi+thoi_gian_khoa_hoc:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+entities:
+- khoa_hoc
+slots:
+  khoa_hoc:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: 'Chào bạn, tôi là chuyên viên tư vấn tự động CUSC, tôi có thể giúp gì cho bạn? Hiện tại CUSC đào tạo các khóa học ngắn hạn như: An toàn, an ninh thông tin; Quản trị mạng doanh nghiệp; Thiết kế và cài đặt mạng; Bảo mật ứng dụng web; Điều tra tội phạm mạng; Phát triển ứng dụng Web với PHP và MySQL; Phát triển ứng dụng Web với ASP.NET MVC; Phát triển ứng dụng Web với Laravel và AngularJS; Phát triển ứng dụng Web với JAVA EE, Lập trình C# căn bản; Lập trình Java căn bản; Phát triển ứng dụng Android; An toàn và bảo mật thông tin cá nhân; Phát triển ứng dụng iOS; Thiết kế và quản trị website với Wordpress; Kiểm thử phần mềm; Lập trình Arduino cơ bản. Bên cạnh đó CUSC cũng đào tạo  các khóa học dài hạn như: Lập trình viên quốc tế, Chuyên gia trí tuệ nhân tạo, Mỹ thuật đa phương tiện'
+  utter_bye:
+  - text: Cảm ơn bạn, rất hân hạnh được giúp đỡ bạn.
+  utter_so_luong_tuyen_sinh:
+  - text: CUSC có nhu cầu tuyển dụng và đào tạo 300 nhân lực CNTT cho mỗi chuyên ngành để cung cấp cho doanh nghiệp phần mềm và nội dung số, ưu tiên hồ sơ nộp sớm cho đến khi đủ 300, vì cam kết đảm bảo việc làm nên chỉ có thể hỗ trợ số lượng này thôi, nên em cứ nộp hồ sơ đăng ký xét tuyển trước từ bây giờ để giữ chỗ cho chắc.
+  utter_dang_ky_xet_tuyen:
+  - text: Để đăng ký xét tuyển, em điền đầy đủ thông tin vào phiếu này, ký tên, dán ảnh và đem về xác nhận ở trường THPT hoặc xác nhận tại địa phương và gửi về trường theo địa chỉ Trung tâm Công nghệ Phần mềm trường Đại học Cần Thơ, số 01 - đường Lý Tự Trọng, Q. Ninh Kiều, TP. Cần Thơ (hoặc nộp trực tiếp nếu nhà gần). Em có thể chụp hình phiếu đăng ký xét tuyển sau khi đã làm xong và gửi qua đây  nhé. https://aptech.cusc.vn/Portals/1/Phieu-dang-ky-xet-tuyen-2021-Aptech.pdf https://arena.cusc.vn/Portals/1/Phieu-dang-ky-xet-tuyen-2021-Arena.pdf https://aptech.cusc.vn/Portals/1/Phieu-dang-ky-xet-tuyen-2021.pdf
+  utter_dieu_kien_tuyen_sinh_chuan_quoc_te:
+  - text: Điều kiện tuyển sinh của chương trình CNTT chuẩn Quốc tế tại Trung tâm Công nghệ Phần mềm Đại học Cần Thơ là tốt nghiệp THPT, em tốt nghiêp THPT là có thể học được vì chương trình đào tạo từ cơ bản, nâng cao cho đến chuyên sâu. Tuy nhiên, 2020 mỗi chuyên ngành chỉ có 300 chỉ tiêu nên nếu em quan tâm đến chương trình thì ngay từ bây giờ em có thể đăng ký xét tuyển trước để được ưu tiên. Cách thức xét tuyển khá đơn giản, em chỉ cần làm phiếu đăng ký xét tuyển và nộp lại Trung tâm là được nhé. Em tải phiếu đăng ký xét tuyển được gửi kèm, điền đầy đủ thông tin vào phiếu, ký tên, dán ảnh và đem về xác nhận ở trường THPT hoặc xác nhận tại địa phương và gửi về trường theo địa chỉ Trung tâm Công nghệ Phần mềm trường Đại học Cần Thơ, số 01 - đường Lý Tự Trọng, Q. Ninh Kiều, TP. Cần Thơ (hoặc nộp trực tiếp nếu nhà gần).
+  utter_chuong_trinh_hoc:
+  - text: 'Trường Đại học Cần Thơ có tuyển sinh ngành Công nghệ Thông tin chuẩn Quốc tế với các chuyên ngành Lập trình viên, Mỹ thuật đa phương tiện, Trí tuệ nhân tạo và máy học. Một số điểm khác biệt: Thời gian học ngắn, Đảm bảo việc làm, Bằng cấp Quốc tế được công nhận toàn cầu, có thể học song song nhận thêm bằng ĐH/CĐ, Chương trình 2,5 năm chỉ tập trung chuyên ngành, tiếng Anh, kỹ năng, Thực hành nhiều, tích lũy kinh nghiệm thực tiễn trong quá trình học thông qua Đồ án cuối mỗi học kỳ, kiến tập, thực tập. Tăng cường ngoại ngữ qua môi trường học Quốc tế, hỗ trợ học phí chứng chỉ ngoại ngữ, Chỉ cần tốt nghiệp THPT, không thi tuyển, không xét điểm thi, học bạ, Chương trình cập nhật liên tục. Em tham khảo thêm tại đây nhé: https://aptech.cusc.vn/tuyen-sinh-APTECH.html; https://aptech.cusc.vn/tuyen-sinh-ARENA.html; https://acnpro.cusc.vn/#/.'
+  utter_doi_tuong_tuyen_sinh:
+  - text: 'Đối tượng: Tốt nghiệp THPT Hình thức tuyển sinh: Xét tuyển Chỉ tiêu: CUSC có nhu cầu tuyển dụng và đào tạo 300 nhân lực CNTT cho mỗi chuyên ngành để cung cấp cho doanh nghiệp phần mềm và nội dung số (Ưu tiên cho hồ sơ nộp sớm) Ngay từ bây giờ em có thể nộp hồ sơ để giữ chổ trước, khi có điểm thi tốt nghiệp hoặc bằng tốt nghiệp tạm thời sẽ bổ sung sau, nộp hồ sơ trực tiếp hoặc nộp qua đường bưu điện tới địa chỉ: Trung tâm Công nghệ Phần mềm Đại học Cần Thơ, số 01, Lý Tự Trọng, Ninh Kiều, Cần Thơ) Hồ sơ gồm có: Phiếu đăng ký xét tuyển - Xét tuyển học bạ: Dành cho chương trình học song song tùy theo điều kiện của trường liên kết (Trung tâm liên kết đào tạo Đại học Cần Thơ, Cao đẳng Cần Thơ, Cao đẳng VHNT Cần Thơ)'
+  utter_kha_nang_toan_hoc:
+  - text: Tư duy toán học ở khá trở lên cũng là lợi thế khi tham gia học, nhưng không bắt buộc. Điều kiện xét tuyển của ngành này là tốt nghiệp THPT (Ưu tiên cho hồ sơ nộp sớm). Các bạn có kiến thức về lập trình căn bản (tư duy lập trình), VD như lập trình C là 1 lợi thế, nhưng không bắt buộc. Nếu chưa biết qua lập trình căn bản, các bạn cần nhiệt huyết và nỗ lực nhiều hơn, có thể tự học, đọc tài liệu thêm. Trung tâm có tạo điều kiện cho các bạn học dự thính môn Lập trình căn bản nếu nếu có lớp phù hợp.
+  utter_kha_nang_ve:
+  - text: Vẽ - chỉ là lợi thế chứ không phải là nhân tố quyết định bạn có học được hay không. MTĐPT không yêu cầu phải có năng khiếu đặc biệt. Tư duy thẩm mỹ và tính sáng tạo là yếu tố hàng đầu giúp bạn thành công.
+  utter_dai_hoc_can_tho:
+  - text: 'Trung tâm Công nghệ Phần mềm trực thuộc trường trường Đại học Cần Thơ nên khi em là sinh viên của Trung tâm thì có thể sử dụng các dịch vụ của trường Đại học Cần Thơ như: ký túc xá, Trung tâm học liệu (thư viện hiện đại hàng đầu Đông Nam Á), phòng tập Gym…, ngoài ra em có thể tham gia các phong trào, hoạt động của trường ĐHCT tổ chức như hội thao, hội diễn văn nghệ, cắm trại,…'
+  utter_may_tinh:
+  - text: Nếu có điều kiện các em trang bị máy tính riêng để thực hành thêm tại nhà sẽ thuận tiện hơn vì CUSC áp dụng phương pháp học blended learning (kết hợp giữa lý thuyết, đào tạo online, và các buổi thực hành). Tuy nhiên trường hợp các em chưa mua kịp máy tính vẫn có thể học được vì tại Trung tâm có riêng phòng lý thuyết, phòng thực hành được trang bị máy tính cấu hình mạnh kết nối Internet cáp quang tốc độ cao phục vụ học tập và thực hành ngoài giờ, toàn bộ các địa điểm trong trường được phủ sóng wifi giúp sinh viên liên tục cập nhật thông tin mọi lúc, mọi nơi. Bên cạnh đó đối với chuyên ngành Mỹ thuật Đa phương tiện Trung tâm còn trang bị phòng Arena Studio để các em có thể chụp ảnh, quay video clip,… các thiết bị như máy chụp ảnh, máy quay phim, bảng vẽ Wacom để phục vụ, hỗ trợ sinh viên trong suốt quá trình học.
+  utter_phong_hoc:
+  - text: Tại Trung tâm có riêng phòng lý thuyết, phòng thực hành được trang bị máy tính cấu hình mạnh kết nối Internet cáp quang tốc độ cao phục vụ học tập và thực hành ngoài giờ, toàn bộ các địa điểm trong trường được phủ sóng wifi giúp sinh viên liên tục cập nhật thông tin mọi lúc, mọi nơi. Bên cạnh đó đối với chuyên ngành Mỹ thuật Đa phương tiện Trung tâm còn trang bị phòng Arena Studio để các em có thể chụp ảnh, quay video clip,… các thiết bị như máy chụp ảnh, máy quay phim, bảng vẽ Wacom để phục vụ, hỗ trợ sinh viên trong suốt quá trình học.
+  utter_phong_trao:
+  - text: Em có thể tham gia các phong trào, hoạt động của trường ĐHCT tổ chức như hội thao, hội diễn văn nghệ, cắm trại,… Bên cạnh đó Trung tâm vẫn có các hoạt động riêng như các cuộc thi học thuật, văn nghệ, dã ngoại, tham quan kiến tập…
+  utter_bang_cap_quoc_te:
+  - text: Bằng cấp quốc tế có giá trị trên 50 quốc gia, tương đương với bằng cao đẳng của nước ngoài, có thể làm việc tại các cty nước ngoài, hoặc liên thông 1-1,5 năm tại các trường ĐH Quốc tế trong và ngoài nước để lấy bằng ĐH Quốc tế
+  utter_acn_pro:
+  - text: ACN Pro là chương trình do Aptech - Ấn Độ kết hợp trường Đại học Cần Thơ triển khai tại Việt Nam. Bằng cấp do Aptech - Ấn Độ cấp, có giá trị Quốc tế, được công nhận rộng rãi trên 52 quốc gia.
+  utter_dang_ki_dai_hoc_CNTT:
+  - text: 'Đối với chương trình song bằng 4.5 năm, ngoài phiếu đăng ký xét tuyển, PHẦN ĐẠI HỌC CẦN THƠ NGÀNH CNTT HỆ VLVH sẽ có xét thêm học bạ hoặc điểm thi tốt nghiệp THPT. Hồ sơ này chị sẽ hướng dẫn sau, khi em đăng ký nhập học. Điều kiện: Tổng 3 môn trong tổ hợp xét tuyển đủ 14 điểm. Có 4 tổ hợp: A00, A01, B00, D01.'
+  utter_dang_ki_cao_dang_CNTT:
+  - text: 'Đối với chương trình song bằng 2.5 năm lấy thêm bằng CĐ CNTT, ngoài phiếu đăng ký xét tuyển, PHẦN CAO ĐẲNG CẦN THƠ NGÀNH TIN HỌC ỨNG DỤNG HOẶC HỆ THỐNG THÔNG TIN sẽ có xét thêm học bạ hoặc điểm thi tốt nghiệp THPT. Hồ sơ này chị sẽ hướng dẫn sau, khi em đăng ký nhập học. Điều kiện: Xét học bạ điểm trung bình năm lớp 12 > 5.0; Xét điểm thi tốt nghiệp THPT tổng 3 môn trong tổ hợp xét tuyển đủ 10 điểm, không có điểm liệt (điểm 0). Có 2 tổ hợp: A00, A01.'
+  utter_hinh_thuc_hoc:
+  - text: 'Có thể chọn 1 trong các hình thức sau: Chương trình Quốc tế: học 2,5 năm nhận bằng Quốc tế do Aptech Ấn Độ cấp, ở nước ngoài tương đương với cao đẳng Chương trình Cao đẳng CNTT: Thời gian đào tạo: 2.5 năm (6HK), chương trình CĐ tại Trung tâm đặc biệt hơn so với các chương trình CĐ khác ở chổ: cũng trong thời gian đào tạo là 2.5 năm nhưng sau khi tốt nghiệp SV sẽ nhận được 2 bằng: 1 bằng CĐ Kỹ sư thực hành do CĐ Cần Thơ cấp và 1 bằng LTV Quốc tế do Aptech Ấn Độ cấp Chương trình Cao đẳng TKĐH: Thời gian đào tạo: 2,5 năm, chương trình CĐ tại Trung tâm đặc biệt hơn so với các chương trình CĐ khác ở chổ: chỉ trong thời gian đào tạo là 2,5 năm nhưng sau khi tốt nghiệp SV sẽ nhận được 2 bằng: 1 bằng CĐ Cử nhân thực hành do CĐ Văn hóa Nghệ thuật Cần Thơ cấp và 1 bằng MTĐPT Quốc tế do Aptech Ấn Độ cấp Chương trình Đại học: Thời gian đào tạo: 4,5 năm với chuyên ngành ĐH CNTT, chương trình ĐH tại Trung tâm đặc biệt hơn so với các chương trình ĐH khác ở chổ: cũng trong thời gian đào tạo là 4,5 năm nhưng sau khi tốt nghiệp SV sẽ nhận được 2 bằng: 1 bằng ĐH CNTT hệ VLVH do ĐHCT cấp và 1 bằng LTV Quốc tế do Aptech Ấn Độ cấp.'
+  utter_lap_trinh_vien_quoc_te:
+  - text: 'Lập trình viên Quốc tế - Aptech là chương trình đào tạo chuyên nghiệp về thiết kế Website; phát triển ứng dụng di động đa nền tảng; phát triển ứng dụng công nghệ tiên tiến như Java, .Net; điện toán đám mây; quản trị Cơ sở dữ liệu, Phát triển ứng dụng trí tuệ nhân tạo, Kỹ sư hệ thống, thiết kế và phân tích mạng..... Học xong HK1 sinh viên có thể tự xây dựng cho mình 1 website thương mại điện tử (VD: các trang web bán hàng online như Lazada, Juno,…) Thông tin chi tiết: https://aptech.cusc.vn/tuyen-sinh-APTECH.html ; https://aptech.cusc.vn/?tabid=553'
+  utter_my_thuat_da_phuong_tien:
+  - text: 'Mỹ thuật đa phương tiện Quốc tế - Arena là chương trình đào tạo về thiết kế đồ họa quảng cáo, nhiếp ảnh số và xử lý ảnh hậu kỳ, thiết kế dàn trang, xuất bản và in ấn; thiết kế web tương tác và Kỹ thuật số; Sản xuất Phim kỹ thuật số và thiết kế Game; Sản xuất Phim hoạt hình 3D; … Kết thúc HK1 sinh viên hoàn toàn có thể thiết kế 1 Bộ nhận dạng thương hiệu (VD: Hầu hết các công ty/doanh nghiệp đều có bộ nhận dạng thương hiệu để quảng bá hình ảnh như: namecard, đồng phục nhân viên, bandrole, poster, Brochure, viết,..) Thông tin chi tiết: https://aptech.cusc.vn/tuyen-sinh-ARENA.html ; https://arena.cusc.vn/Default.aspx?tabid=479 '
+  utter_tri_tue_nhan_tao:
+  - text: 'Thông tin chi tiết chương trình Chuyên gia trí tuệ nhân tạo và máy học (AI và Machine Learning): https://acnpro.cusc.vn/#/'
+  utter_dai_hoc_cntt:
+  - text: 'Thời gian đào tạo: 4,5 năm với chuyên ngành ĐH CNTT, chương trình ĐH tại Trung tâm đặc biệt hơn so với các chương trình ĐH khác ở chổ: cũng trong thời gian đào tạo là 4,5 năm nhưng sau khi tốt nghiệp SV sẽ nhận được 2 bằng: 1 bằng ĐH CNTT hệ VLVH do ĐHCT cấp và 1 bằng LTV Quốc tế do Aptech Ấn Độ cấp. Mời em tham khảo thêm thông tin chi tiết tại đây: https://aptech.cusc.vn/tuyen-sinh-APTECH.html'
+  utter_cao_dang_cntt:
+  - text: 'Thời gian đào tạo: 2,5 năm (6HK), chương trình Cao đẳng tại Trung tâm đặc biệt hơn so với các chương trình Cao đẳng khác ở chổ: cũng trong thời gian đào tạo là 3 năm nhưng sau khi tốt nghiệp sinh viên sẽ nhận được 2 bằng: 1 bằng CĐ CNTT Danh hiệu Kỹ sư thực hành do CĐ Cần Thơ cấp và 1 bằng LTV Quốc tế do Aptech Ấn Độ cấp Mời em tham khảo thêm thông tin chi tiết tại đây: https://aptech.cusc.vn/tuyen-sinh-APTECH.html'
+  utter_thiet_ke_do_hoa:
+  - text: 'Thời gian đào tạo: 2,5 năm, chương trình CĐ tại Trung tâm đặc biệt hơn so với các chương trình CĐ khác ở chổ: cũng trong thời gian đào tạo là 2,5 năm nhưng sau khi tốt nghiệp SV sẽ nhận được 2 bằng: 1 bằng CĐ TKĐH Danh hiệu Cử nhân thực hành do trường CĐ Văn hóa Nghệ thuật Cần Thơ cấp và 1 bằng MTĐPT Quốc tế do Aptech Ấn Độ cấp Mời em tham khảo thêm thông tin chi tiết tại đây: https://aptech.cusc.vn/tuyen-sinh-ARENA.html'
+  utter_viec_lam_lap_trinh_vien:
+  - text: 'Theo Vietnamworks (8/2019), CNTT nằm trong top 5 các ngành nghề được trả lương cao nhất hiện nay: Mức lương trung bình của lập trình viên có kinh nghiệm là 30 triệu đồng/tháng, Còn lương khởi điểm lập trình viên dưới 2 năm kinh nghiệm là 7.7 triệu đồng/tháng, Các bạn có thể nhận được mức lương khủng hơn nữa nếu định hướng chuyên sâu thêm về trí tuệ nhân tạo (AI), Machine Learning, Khoa học dữ liệu: từ 35 đến 42,5 triệu đồng/tháng (CUSC có đào tạo), Mức lương đề xuất cho designer ở TB thấp là 8,6 triệu, còn chuyên viên giàu kinh nghiệm, mức lương cao nhất là 25 triệu/tháng, khi phát triển lên quản lý, mức lương còn tăng gấp nhiều lần. http://hrinsider.vietnamworks.com/kt_chuyen_nganh/top-nhung-nganh-duoc-tra-luong-cao-nhat-o-viet-nam-dac-biet-co-mot-nghe-luong-tu-130-180-trieu-thang-va-chua-bao-gio-het-hot http://kenh14.vn/top-8-nganh-nghe-danh-cho-dan-thiet-ke-do-hoa-sau-khi-ra-truong-2019100419355864.chn'
+  utter_viec_lam_my_thuat_da_phuong_tien:
+  - text: 'Học viên có thể làm việc tại các công ty/doanh nghiệp trong các lĩnh vực đồ họa 2D và xử lý ảnh tại các công ty quảng cáo, chế bản điện tử, thiết kế in ấn, thiết kế giao diện ở các vị trí như: Chuyên viên sáng tạo mỹ thuật, Nhà thiết kế đồ họa, Nghệ sĩ minh họa số, Thiết kế dàn trang, Biên tập ảnh số, Nhiếp ảnh gia, xử lý ảnh hậu kỳ, ... Trong các lĩnh vực thiết kế giao diện Web và phát triển các Web tương tác, bảo trì và quản trị Web tại các công ty phần mềm, thiết kế Web ở các vị trí như Nhà thiết kế tương tác, Thiết kế giao diện cho Web, Quản trị Web, Chuyên gia tích hợp nội dung số, Nghệ sỹ hoạt hình cho Web, Truyền thông và tiếp thị số. Học viên có thể tham gia lĩnh vực xử lý âm thanh, video và phim tại các công ty xây dựng phim quảng cáo, video nhạc, sản xuất phim với các vị trí như: Nghệ sỹ vẽ kịch bản phân cảnh, Kỹ thuật viên âm thanh, Nhà biên tập phim, video, nghệ sỹ dựng mô hình 3D, chuyên gia kỹ xảo điện ảnh số, …; lĩnh vực sản xuất Game với những kiến thức vững vàng về quy trình làm Game: lên ý tướng; mô hình hoá, hình nền và các thành phần chính trong Game, hoạt hình của nhân vật, chất liệu da, trang bị, ánh sáng, đạo cụ, vũ khí, ... Trong các lĩnh vực thiết kế phim hoạt hình 3D tại các công ty quảng cáo, làm phim hoạt hình, xây dựng các hiệu ứng kỹ xảo điện ảnh ở các vị trí như: Nghệ sỹ dựng mô hình 3D, Chuyên gia chuyển động 3D, Chuyên gia sản xuất phim hoạt hình 3D,…'
+  utter_viec_lam_tri_tue_nhan_tao:
+  - text: 'Ngành nghề trong lĩnh vực này rất đa dạng. Cụ thể em có thể đảm nhiệm các vị trí công việc: Phát triển ứng dụng SMAC, Python và R - Đánh giá và phân tích dữ liệu, Thiết kế và phát triển các chiến lược để hỗ trợ người dùng doanh nghiệp, Phát triển ứng dụng thông minh (AI/ ML/ DL), phát triển hệ thống tự động hóa bằng robot, Tư vấn và chuyển giao công nghệ cho các doanh nghiệp liên quan đến Trí tuệ nhân tạo và robot, Quản trị điều hành kỹ thuật cho các doanh nghiệp, đơn vị kinh doanh về robot, ứng dụng robot trong sản xuất, chế tạo, và vận hành, Triển khai, vận hành và bảo trì hệ thống và thiết bị tự động hóa, robot tại doanh nghiệp Công việc trong lĩnh vực trí tuệ nhân tạo (AI) rất nhiều và lương cũng rất cao. Sau khi học xong các bạn có thể xin việc tại các công ty phần mềm trong và ngoài nước, chẳn hạn như: CUSC (TT CNPM ĐHCT), TMA Solution, FPT…. Đảm bảo các bạn có việc làm nếu hoàn thành tốt chương trình này.'
+  utter_lien_thong_lap_trinh_vien_quoc_te:
+  - text: 'Sau khi tốt nghiệp chương trình Lập trình viên Quốc tế, sinh viên có thể liên thông ở các trường ĐH Quốc tế như: RMIT (Úc) học tại Việt Nam hoặc Úc; Swinburne, Southern Cross (Úc); Greenwich (Anh) học tại TPHCM/HN; UCLan (Anh),  Oxford, Middlesex (Anh) học tại London - Anh hoặc Singapore, Lincoln (Malaysia)… hoặc các trường ĐH Việt Nam như ĐH Sư phạm Kỹ thuật Vĩnh Long… Tiết kiệm 2/3 thời gian và học phí.'
+  utter_lien_thong_my_thuat_da_phuong_tien:
+  - text: 'Sau khi tốt nghiệp chương trình Mỹ thuật đa phương tiện Quốc tế, sinh viên có thể liên thông ở các trường ĐH Quốc tế như: RMIT (Úc) học tại Việt Nam hoặc Úc; Swinburne, Jame Cook, Flinder (Úc), Middlesex (Anh) học tại London - Anh hoặc Singapore, Limkokwing, Lincoln (Malaysia)… hoặc các trường ĐH Việt Nam như ĐH Sư phạm Kỹ thuật Vĩnh Long. Tiết kiệm 2/3 thời gian và học phí.'
+  utter_an_toan_an_ninh_thong_tin:
+  - text: 'Chương trình An toàn, an ninh thông tin (Hacker mũ trắng) dùng những kỹ năng của hacker để chống hacker, với những kỹ thuật tấn công như: dò quét hệ thống; nghe lén; tấn công từ chối dịch vụ; tấn công máy chủ website; trộm mật khẩu, bẻ khóa mật khẩu; tấn công bằng tạo Virus; tấn công bằng SQL Injection; tấn công mạng không dây. Từ đó làm cơ sở triển khai các giải pháp phòng chống và phục hồi hệ thống sau khi bị tấn công. Bạn có thể xem thêm thông tin chi tiết tại:  https://aptech.cusc.vn/Default.aspx?tabid=354'
+  utter_quan_tri_mang_doanh_nghiep:
+  - text: 'Chương trình “Chuyên viên quản trị mạng doanh nghiệp” được CUSC thiết kế nhằm đáp ứng nhu cầu thực tế về quản trị hệ thống mạng cho doanh nghiệp trên nền hệ điều hành Windows 10 & Windows Server 2016. Giúp học viên quản trị hiệu quả hệ thống mạng doanh nghiệp, xây dựng hạ tầng mạng có tính bảo mật cao, giúp tiết kiệm thời gian, giảm bớt các chi phí, và mang đến một nền tảng CNTT vững chắc cho doanh nghiệp. Để biết thêm thông tin chi tiết bạn có thể truy cập tại: https://aptech.cusc.vn/Default.aspx?tabid=309'
+  utter_thiet_ke_va_cai_dat_mang:
+  - text: 'Trong thời đại bùng nổ về Công nghệ thông tin hiện nay, mạng máy tính đã trở thành một phần then chốt của tất cả các cơ quan / doanh nghiệp và là một kênh trao đổi thông tin không thể thiếu. Vì thế việc đầu tư xây dựng một cơ sở hạ tầng mạng cho cơ quan/ doanh nghiệp là điều rất cần thiết. Khóa học “Thiết kế và cài đặt mạng” tại Trung tâm Công nghệ Phần mềm Đại học Cần Thơ được ra đời với mục đích đáp ứng nhu cầu cho các doanh nghiệp về thiết kế, triển khai và vận hành một hệ thống mạng hiệu quả nhất. Để biết thêm thông tin chi tiết bạn có thể truy cập tại: https://aptech.cusc.vn/?tabid=411'
+  utter_bao_mat_ung_dung_web:
+  - text: 'Hiện nay, các ứng dụng web từ các phần mềm quản lý nội bộ đến các hệ thống quản lý tài chính, từ các ứng dụng thương mại điện tử đến các hệ thống giao dịch ngân hàng, bao gồm quy mô sử dụng trong hệ thống mạng nội bộ đến cung cấp rộng rãi cho người dùng internet đang đối mặt với các vụ tấn công, xâm hại vào các máy chủ và website (theo http://www.sans.org). Xuất phát từ thực tế đó, khóa học “Bảo mật ứng dụng Web” được thiết kế đặc biệt, cung cấp học viên kiến thức, kinh nghiệm về cấu hình, cài đặt, bảo trì và nâng cao tính năng bảo mật cho máy chủ và các ứng dụng web nhằm đảm bảo an toàn trước nguy cơ tấn công thông qua website của cơ quan, doanh nghiệp. Để biết thêm thông tin chi tiết bạn có thể truy cập tại: https://aptech.cusc.vn/Default.aspx?tabid=412'
+  utter_dieu_tra_toi_pham_may_tinh:
+  - text: 'An ninh thông tin là vấn đề được quan tâm hàng đầu trong nền kinh tế thông tin hiện nay. Việc bảo mật thông tin là trách nhiệm tất cả các thành viên trong tổ chức để giữ dữ liệu quan trọng an toàn từ những kẻ xâm nhập và tin tặc. Điều Tra Tội Phạm Máy Tính (Ethical Hacking and Forensic Investigation) là chương trình đào tạo chuyên nghiệp về điều tra dấu vết Hacker, nhằm cung cấp cho học viên những kỹ năng chuyên sâu về an ninh mạng để nhận dạng những dấu hiệu của kẻ xâm nhập mạng máy tính và tập hợp những bằng chứng thực tế để phục vụ cho công tác điều tra. Để biết thêm thông tin chi tiết bạn có thể truy cập tại: https://aptech.cusc.vn/Default.aspx?tabid=425'
+  utter_dung_web_voi_php_mysql:
+  - text: 'Khóa đào tạo Lập trình Back-end với PHP và MySQL cung cấp cho người học kiến thức chuyên sâu để xây dựng giải pháp toàn diện và chuyên nghiệp về Web cho cơ quan/ doanh nghiệp, giúp cơ quan/ doanh nghiệp tiếp cận đúng đối tượng khách hàng. Khóa học cũng đáp ứng đa dạng nhu cầu từ xây dựng website giới thiệu sản phẩm và thương mại điện tử, cổng thông tin đến website quản trị cơ quan/ doanh nghiệp. Chương trình đào tạo được xây dựng và giảng dạy dựa trên dự án thực tế, nội dung được phân bố để hướng người học vận dụng kiến thức giải quyết từng vấn đề đặt ra trong dự án. Với phương châm đào tạo gắn với thực tiễn, học viên sẽ được trải nghiệm từng bước để tạo một website chuyên nghiệp với đầy đủ tính năng vượt trội. Khi kết thúc khóa đào tạo, người học có đủ khả năng xây dựng được website hoàn chỉnh dựa trên kỹ năng và kiến thức chuyên môn về Lập trình back-end với PHP và MySQL. Để biết thêm thông tin chi tiết bạn có thể truy cập tại: https://aptech.cusc.vn/Default.aspx?tabid=425'
+  utter_ung_dung_web_voi_laravel:
+  - text: 'Khóa học “Phát triển ứng dụng Web với Laravel và AngularJS” giúp học viên thiết kế bố cục và giao diện Web hợp lý với Bootstrap và jQuery plug-in, nhằm tăng khả năng tương tác với người dùng và đa dạng cách trình bày thông tin của trang Web. Khóa học được tổ chức theo hướng dự án để giúp học viên hiểu rõ phương pháp quản lý, bảo mật dữ liệu và  kiến trúc MVC/hMVC của PHP Framework Laravel. Ngoài ra, học viên còn được hướng dẫn sử dụng JavaScript Framework AngularJS từ cơ bản đến nâng cao để tăng khả năng hiển thị của ứng dụng web và được giới thiệu phương pháp sử dụng dữ liệu JSON/XML kết hợp với kỹ thuật xử lý không đồng bộ (AJAX) để tăng tốc độ hiển thị và xử lý của trang web. Bên cạnh đó, học viên cũng được hướng dẫn cách tích hợp các Laravel plug-in để xây dựng các chức năng của hệ thống: gửi mail, upload hình, in ấn… Để biết thêm thông tin chi tiết bạn có thể truy cập tại: https://aptech.cusc.vn/Default.aspx?tabid=420'
+  utter_ung_dung_web_java_ee:
+  - text: 'Java – Ngôn ngữ lập trình được sử dụng rộng rãi nhất hiện nay, là ngôn ngữ lập trình số 1 về nhu cầu tuyển dụng, chiếm ¼ số lượng thông báo tuyển dụng (thống kê nhu cầu tuyển dụng lập trình viên theo ngôn ngữ lập trình). Tuy nhiên, đa số các thông báo tuyển dụng đều có ghi chú chung là “ưu tiên cho người có kinh nghiệm” cho nên mỗi bạn sinh viên đang theo đuổi chuyên ngành Lập trình viên cần phải nghiên cứu và tham gia ít nhất một dự án thực tế mới đáp ứng được yêu cầu này của nhà tuyển dụng. Chính vì vậy, CUSC đã phát hành chương trình đào tạo “Phát triển ứng dụng Web với Java EE” để tạo điều kiện cho các học viên làm quen với công nghệ mới và tích lũy được kinh nghiệm thực tế trong các dự án xây dựng và hoàn chỉnh ứng dụng Web trên nền công nghệ Java EE. Để biết thêm thông tin chi tiết bạn có thể truy cập tại: https://aptech.cusc.vn/?tabid=391'
+  utter_lap_trinh_c#_can_ban:
+  - text: 'Khóa học Lập trình C# căn bản đào tạo những kỹ thuật cơ bản và nâng cao trong ngôn ngữ lập trình hướng đối tượng C#. Qua môn học, học viên có thể nắm được các kỹ năng lập trình cơ bản và có thể xây dựng các chương trình ứng dụng với ngôn ngữ C#. Để biết thêm thông tin chi tiết bạn có thể truy cập tại: https://aptech.cusc.vn/Default.aspx?tabid=418'
+  utter_lap_trinh_java_can_ban:
+  - text: 'Khóa học Lập trình Java căn bản cung cấp kiến thức nền tảng về ngôn ngữ Java, kỹ năng lập trình hướng đối tượng, công cụ hỗ trợ lập trình ứng dụng Java. Sau khóa học, học viên sẽ nắm vững kiến thức căn bản của ngôn ngữ Java làm nền tảng giúp học viên có thể tự nghiên cứu hoặc tham gia chuyên sâu các lĩnh vực như Web và Mobile bằng ngôn ngữ Java. Để biết thêm thông tin chi tiết bạn có thể truy cập tại: https://aptech.cusc.vn/Default.aspx?tabid=418'
+  utter_phat_trien_ung_dung_android:
+  - text: Phát triển ứng dụng android
+  utter_an_toan_va_bao_mat_thong_tin_ca_nhan:
+  - text: 'Trong thời kỳ hội nhập quốc tế và giai đoạn định hướng xã hội theo cuộc cách mạng Công nghiệp 4.0; thì thông tin trên Internet của mỗi cá nhân, tổ chức và thậm chí cả quốc gia đã trở thành một khối tài sản có giá trị đặc biệt. Các doanh nghiệp, tổ chức sẽ gặp rắc rối khi các thông tin bị đánh cắp và bị sử dụng trong những thời điểm nhạy cảm. Hầu hết các doanh nghiệp lớn và các tổ chức tài chính đều phải hợp tác với những chuyên gia bảo mật để hỗ trợ hệ thống được an toàn trong thời gian hoạt động, tuy nhiên khách hàng của họ vẫn có thể bị thiệt hại nếu các thông tin cá nhân bị đánh cắp. Khi biết được những thông tin cá nhân, tin tặc (Hacker) có thể tạo ra các thông tin giả mạo, dẫn dụ người dùng truy cập các trang web để đánh cắp thông tin nhạy cảm như: tên truy cập, mật khẩu, thẻ tín dụng… Từ những thực tế đó cho thấy việc bảo mật thông tin cá nhân rất cấp bách và cần thiết để bảo vệ tài sản cá nhân và đảm bảo an toàn cho hệ thống thông tin của tổ chức, của đơn vị, doanh nghiệp. CUSC đã xây dựng Workshop “An toàn & Bảo mật Thông tin Cá nhân” nhằm cung cấp cho học viên kiến thức về an ninh thông tin, những nguy cơ tiềm ẩn bị đánh cắp thông tin, đưa ra những phương pháp giúp học viên có thể bảo mật được thông tin cá nhân, thông tin trên máy tính, email, điện thoại, và các thông tin khác như mạng xã hội,... Để biết thêm thông tin chi tiết bạn có thể truy cập tại: https://aptech.cusc.vn/?tabid=435'
+  utter_phat_trien_ung_dung_ios:
+  - text: 'Với sự phát triển vượt bậc của ngành Công nghiệp phần mềm và nội dung số, đặc biệt là ngành phát triển ứng dụng trên thiết bị di động, máy tính bảng và khai thác dịch vụ điện toán đám mây,… Đặc biệt, là lĩnh vực Phát triển ứng dụng trên iOS đã thú hút rất nhiều bạn trể đam mê công nghệ thông tin và các Lập trình viên tham gia. Chương trình đào tạo “Phát triển ứng dụng iOS” được thiết kế từ cơ bản nhất về tư duy lập trình đến nâng cao, được giảng dạy theo từng cấp độ, trang bị kỹ năng lập trình chuyên nghiệp cho người học. Với kiến thức và kỹ năng tích lũy từ chương trình sẽ đảm bảo cho học viện có thể áp dụng ngay vào qui trình phát triển ứng dụng iOS thông qua sản phẩm đồ án cuối khoá. Học viên được đào tạo theo mô hình “Đào tạo - Sản xuất Phần mềm - Thực tiễn” giúp học viên có thể phát triển những ứng dụng mang tính thực tế cao và hoàn toàn đủ điều kiện để kinh doanh sản phẩm của mình trên chợ ứng dụng của Apple (Apple Stores). Để biết thêm thông tin chi tiết bạn có thể truy cập tại: https://aptech.cusc.vn/Default.aspx?tabid=443'
+  utter_ung_dung_web_wordpress:
+  - text: 'WordPress là một Framework bằng ngôn ngữ PHP để hỗ trợ tạo blog cá nhân, và nó được rất nhiều người sử dụng ủng hộ về tính dễ sử dụng, nhiều tính năng hữu ích. Các thao tác trong WordPress rất đơn giản, giao diện quản trị trực quan giúp người học có thể nắm rõ cơ cấu quản lý một website WordPress trong thời gian ngắn. Chuyên đề cung cấp cho học viên những kiến thức liên quan đến việc sử dụng Wordpress để làm nền tảng xây dựng website cá nhân. Để biết thêm thông tin chi tiết bạn có thể truy cập tại: https://aptech.cusc.vn/Default.aspx?tabid=448'
+  utter_kiem_thu_phan_mem:
+  - text: 'Khóa học Kiểm thử Phần mềm chuyên nghiệp (LogiGear Certified Test Professional - LCTP) là chương trình giới thiệu trực quan về kiểm thử phần mềm gray box một cách có hệ thống. Qua khóa học, học viên sẽ nắm bắt được những kỹ thuật và những suy luận được áp dụng trong việc phát triển phần mềm cho khách hàng hoặc cung cấp dịch vụ phát triển và kiểm thử phần mềm cho các công ty khác. Khóa học nhằm mục đích phát triển những kỹ năng kiểm thử thực tế, bao gồm kiểm thử thủ công và kiểm thử tự động, được xây dựng dựa trên yếu tố thực tiễn trong hoạt động sản xuất và phát triển Phần mềm. Để biết thêm thông tin chi tiết bạn có thể truy cập tại: https://aptech.cusc.vn/Default.aspx?tabid=459'
+  utter_lap_trinh_arduino_can_ban:
+  - text: 'Khóa học cung cấp những kiến thức cơ bản về hệ thống IoT, lập trình nhúng, board mạch Arduino và những ứng dụng của Arduino trong thực tế hiện nay. Ngoài ra, khóa học còn cung cấp cho học viên những nguyên lý trong việc thiết kế, lắp đặt và lập trình các module điện tử thông qua Arduino nhằm tạo ra những sản phẩm có tính thực tế cao. Để biết thêm thông tin chi tiết bạn có thể truy cập tại: https://aptech.cusc.vn/Default.aspx?tabid=469'
+  utter_ung_dung_web_asp_mvc:
+  - text: 'ASP.NET MVC là một trong những công nghệ hiện đại và được sử dụng phổ biến trong việc phát triển các ứng dụng Web, với đặc điểm nổi bật là được thiết kế một cách gọn nhẹ, giảm thiểu sự phức tạp của việc xây dựng ứng dụng Web theo kiến trúc MVC (Model - View - Controller). Sự chia nhỏ này giúp lập trình viên dễ dàng kiểm soát các thành phần trong khi phát triển, cũng như lợi ích lâu dài trong việc kiểm tra, bảo trì và nâng cấp ứng dụng Web. Khóa học Phát triển ứng dụng Web với ASP.Net MVC tại CUSC sẽ cung cấp những kiến thức, kỹ năng cần thiết để học viên có thể tự mình xây dựng và phát triển Web hoàn chỉnh theo kiến trúc MVC, thích ứng với nhiều dạng thiết bị khác nhau. Để biết thêm thông tin chi tiết bạn có thể truy cập tại: https://aptech.cusc.vn/?tabid=393'
+  utter_hoc_phi_dai_hoc_cntt:
+  - text: 'Chương trình học song song nhận 2 bằng, với thời gian 4,5 năm các bạn nhận 2 bằng: Lập trình viên Quốc tế (LTVQT) do Aptech - Ấn Độ cấp với thời gian học 2,5 năm đầu, và bằng Đại học CNTT (hệ VLVH) do ĐHCT cấp, học phí cũng sẽ đóng 2 phần: HỌC PHÍ LTVQT: 3,47 triệu đồng/ tháng (tổng cộng 20 lần đóng), nếu đóng theo học kỳ giảm còn 16,8 triệu đồng/ HK (4 lần đóng), đóng trọn năm giảm còn 32,9 triệu đồng/ năm (2 lần đóng). HỌC PHÍ PHẦN ĐẠI HỌC CẦN THƠ NGÀNH CNTT HỆ VLVH: 5,750 triệu đồng/ học kỳ (9 học kỳ). Học phí LTVQT đã bao gồm giáo trình, đồng phục, balo, cơ sở vật chất, hỗ trợ học phí học Anh văn lấy chứng chỉ, phí hỗ trợ việc làm (không phát sinh chi phí thêm trong quá trình học)'
+  uter_hoc_phi_cao_dang_cntt:
+  - text: 'Chương trình bằng đôi bậc cao đẳng, với thời gian 2,5 năm các bạn nhận 2 bằng: LTV QT và bằng CĐ ngành CNTT, học phí cũng sẽ đóng 2 phần: HỌC PHÍ LTVQT: 3,47 triệu đồng/ tháng (tổng cộng 20 lần đóng), nếu đóng theo học kỳ giảm còn 16,8 triệu đồng/ HK (4 lần đóng), đóng trọn năm giảm còn 32,9 triệu đồng/ năm (2 lần đóng).HỌC PHÍ PHẦN CAO ĐẲNG NGÀNH CNTT: 8 triệu đồng (tương đương 2 HK). Học phí LTVQT đã bao gồm giáo trình, đồng phục, balo, cơ sở vật chất, hỗ trợ học phí học Anh văn lấy chứng chỉ, phí hỗ trợ việc làm (không phát sinh chi phí thêm trong quá trình học)'
+  utter_hoc_phi_cao_dang_thiet_ke_do_hoa:
+  - text: 'Chương trình bằng đôi bậc cao đẳng, với thời gian 2,5 năm các bạn nhận 2 bằng: MTĐPT QT, và bằng CĐ ngành TKĐH học phí cũng sẽ đóng 2 phần: HỌC PHÍ MTĐPT: 3,845 triệu đồng/ tháng (tổng cộng 20 lần đóng), nếu đóng theo học kỳ giảm còn 18,625 triệu đồng/ HK (4 lần đóng), đóng trọn năm giảm còn 36,050  triệu đồng/ năm (2 lần đóng).HỌC PHÍ PHẦN CAO ĐẲNG NGÀNH TKĐH: 13 triệu đồng, đóng theo học kỳ (2,4 triệu - 2,6 triệu/ học kỳ, có 5 học kỳ). Học phí MTĐPT đã bao gồm giáo trình, đồng phục, balo, cơ sở vật chất, hỗ trợ học phí học Anh văn lấy chứng chỉ, phí hỗ trợ việc làm (không phát sinh chi phí thêm trong quá trình học)'
+  utter_he_vua_hoc_vua_lam:
+  - text: 'Hệ Vừa làm vừa học là hình thức học với thời gian linh hoạt được sắp xếp để các em có thể học song song với chương trình Lập trình viên Quốc tế nhận 2 bằng. Bằng Đại học chính quy, Vừa làm vừa học hay liên thông hiện đều có giá trị ngang nhau. Chị gửi em xem thông tin về bằng Đại học trên trang Báo Điện tử Giáo dục Việt Nam Cơ quan chủ quản: Hiệp hội các Trường đại học, cao đẳng Việt Nam https://giaoduc.net.vn/giao-duc-24h/bang-dai-hoc-chinh-quy-tai-chuc-hay-lien-thong-deu-co-gia-tri-ngang-nhau-post199628.gd Trên các trang báo Thanh niên, Dân trí, Tuối trẻ cũng có đăng em nhe'
+  utter_nha_tuyen_dung_doi_tac:
+  - text: Trung tâm rất vinh dự nhận được sự tín nhiệm và những ý kiến đánh giá cao về nguồn nhân sự đã được tuyển dụng tại các đơn vị, doanh nghiệp Axon Active Vietnam, IVS, TWIN Software Solutions, CUSC Soft, Đài phát thanh và truyền hình Thành phố Cần Thơ, Đài truyền hình Thành phố Hồ Chí Minh - HTV, MiềnTây.Net, SANCOH, SANTA, Lys Industries, Phương Tùng Mobile, Điền Quân Media & Entertainment, Digital works, …
+  utter_khong_tim_thay_khoa_hoc:
+  - text: 'Xin lỗi hiện tại tôi không tìm thấy khoá học mà bạn yêu cầu, bạn có thể nói cụ thể hơn không. Hiện tại CUSC đào tạo các khóa học ngắn hạn như: An toàn, an ninh thông tin; Quản trị mạng doanh nghiệp; Thiết kế và cài đặt mạng; Bảo mật ứng dụng web; Điều tra tội phạm mạng; Phát triển ứng dụng Web với PHP và MySQL; Phát triển ứng dụng Web với ASP.NET MVC; Phát triển ứng dụng Web với Laravel và AngularJS; Phát triển ứng dụng Web với JAVA EE, Lập trình C# căn bản; Lập trình Java căn bản; Phát triển ứng dụng Android; An toàn và bảo mật thông tin cá nhân; Phát triển ứng dụng iOS; Thiết kế và quản trị website với Wordpress; Kiểm thử phần mềm; Lập trình Arduino cơ bản. Bên cạnh đó CUSC cũng đào tạo các khóa học dài hạn như: Lập trình viên quốc tế, Chuyên gia trí tuệ nhân tạo, Mỹ thuật đa phương tiện. Hoặc bạn có thể để lại tên và số điện thoại chuyên viên sẽ gọi và tư vấn cụ thể hơn cho bạn'
+  utter_out_of_scope:
+  - text: 'Xin lỗi, yêu cầu này nằm ngoài phạm vi tôi có thể trả lời. Hiện tại CUSC đào tạo các khóa học ngắn hạn như: An toàn, an ninh thông tin; Quản trị mạng doanh nghiệp; Thiết kế và cài đặt mạng; Bảo mật ứng dụng web; Điều tra tội phạm mạng; Phát triển ứng dụng Web với PHP và MySQL; Phát triển ứng dụng Web với ASP.NET MVC; Phát triển ứng dụng Web với Laravel và AngularJS; Phát triển ứng dụng Web với JAVA EE, Lập trình C# căn bản; Lập trình Java căn bản; Phát triển ứng dụng Android; An toàn và bảo mật thông tin cá nhân; Phát triển ứng dụng iOS; Thiết kế và quản trị website với Wordpress; Kiểm thử phần mềm; Lập trình Arduino cơ bản. Bên cạnh đó CUSC cũng đào tạo các khóa học dài hạn như: Lập trình viên quốc tế, Chuyên gia trí tuệ nhân tạo, Mỹ thuật đa phương tiện. Hoặc bạn có thể để lại tên và số điện thoại chuyên viên sẽ gọi và tư vấn cụ thể hơn cho bạn'
+  utter_please_rephrase:
+  - text: Tôi đang trong quá trình học hỏi nên có thể tôi chưa hiểu rõ ý định của bạn là gì. Bạn có thể nói cụ thể hơn giúp tôi được không. Hoặc bạn có thể để lại tên và số điện thoại chuyên viên sẽ gọi và tư vấn cụ thể hơn cho bạn.
+actions:
+- custom_action_gioi_thieu_khoa_hoc
+- custom_action_lien_thong_khoa_hoc
+- custom_action_dang_ki_cao_dang_dai_hoc_cntt
+- custom_action_co_hoi_viec_lam
+- custom_action_hoc_phi
+- custom_action_lich_hoc
+forms: {}
+e2e_actions: []
